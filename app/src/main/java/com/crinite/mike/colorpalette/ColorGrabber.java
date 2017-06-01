@@ -59,7 +59,7 @@ public class ColorGrabber {
 
             return colors;
         }catch(NullPointerException ne){
-            System.out.println("NullPointerException again!");
+            System.out.println(ne.getMessage());
             return new int[0][0];
         }
     }
@@ -79,7 +79,7 @@ public class ColorGrabber {
         int blueBucket = 0;
         int pixelCount = 0;
 
-        for(int x = 0; x <  length; x++){
+        for(int x = 0; x < length; x++){
             for(int y = 0; y < depth; y++){
                 int i = colors[x][y];
                 pixelCount++;
@@ -130,10 +130,10 @@ public class ColorGrabber {
         color2 = mix(color); //color / 2;
         color3 = mix(color); //color * 2;
         color4 = mix(color); //color * 3;
-        color5 = shade(color,0);
-        color6 = shade(color,0);
-        color7 = shade(color,0);
-        color8 = shade(color,0);
+        color5 = shade(color, (float) 0.9); //I don't know why this needs to be casted
+        color6 = shade(color, (float) 0.95);//TODO: Look up why this would need to be casted
+        color7 = shade(color, (float) 1.05);
+        color8 = shade(color, (float) 1.1);
 
         arr[1] = "#" + Integer.toHexString(color1).substring(2);// = "#ffffff";
         arr[2] = "#" + Integer.toHexString(color2).substring(2);// = "#ffffff";
@@ -164,11 +164,24 @@ public class ColorGrabber {
     }
 
     /**
+     * Creates a shade of the given color with the given offset from the color's original hue.
      *
      * @param color The color that will be used to generate a shade
+     * @param offset The decimal offset from the color's hue
      * @return The created shade
      */
-    private int shade(int color, int offset){
-        return color;
+    private int shade(int color, float offset){
+        float[] hsv = new float[3];
+        int alpha = Color.alpha(color);
+        Color.colorToHSV(color, hsv);
+
+        float hue = hsv[0] * offset;
+
+        if((hue < 0) || (hue > 360)){
+            return color;
+        }else {
+            hsv[0] = hue;
+            return Color.HSVToColor(alpha, hsv);
+        }
     }
 }
