@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crinite.mike.colorpalette.TakePhotoActivity">
+
+    <include layout="@layout/content_take_photo"
+        android:id="@+id/include" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/awaiting_photo"
+            android:layout_gravity="center"
+            android:padding="16dp"/>
+
+        <LinearLayout
+            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/mImageView"
+                android:layout_height="300dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                />
+
+            <!--TODO: make this a square that just changes color-->
+            <TextView
+                android:id="@+id/colorView"
+                android:layout_height="200dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shades"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <View
+                android:id="@+id/colorView0"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+            <View
+                android:id="@+id/colorView1"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+            <View
+                android:id="@+id/colorView2"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+            <View
+                android:id="@+id/colorView3"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color_palette"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <View
+                android:id="@+id/colorView4"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+            <View
+                android:id="@+id/colorView5"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+            <View
+                android:id="@+id/colorView6"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+            <View
+                android:id="@+id/colorView7"
+                android:background="@drawable/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

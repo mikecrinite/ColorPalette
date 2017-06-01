@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ColorPalette</string>
+    <string name="title_activity_take_photo">TakePhotoActivity</string>
+    <string name="TakePictureDescription">Press the camera button to take a picture.\nMake sure the object is well-lit.\nTry to fill the screen with the object so that the background does not mess up the resultant color.</string>
+    <string name="awaiting_photo">Awaiting Photo!</string>
+    <string name="color_palette">Color Palette</string>
+    <string name="complementary_colors">Complementary Colors</string>
+</resources>
