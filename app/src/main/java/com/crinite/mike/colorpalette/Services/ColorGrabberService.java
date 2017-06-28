@@ -104,7 +104,7 @@ public class ColorGrabberService {
      * @param filepath The filepath where the target file resides
      * @return The color, formatted in hex
      */
-    public String[] get(String filepath){
+    public String[] decode(String filepath){
         try {
             int[][] colors = ColorGrabberService.getInstance()
                     .loadPixelsFromImage(filepath);
@@ -113,7 +113,14 @@ public class ColorGrabberService {
             palette[0] = "#" + Integer.toHexString(decimalColor).substring(2);
             return palette;
         }catch(IOException e){
-            return new String[]{"#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"};
+            return new String[]{"#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF"};
         }
 
     }
