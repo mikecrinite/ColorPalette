@@ -33,7 +33,7 @@ import java.util.Locale;
  * This activity should be created from the main activity screen when the user chooses
  * to take a picture with the app, rather than upload one from memory
  */
-public class TakePhotoActivity extends AppCompatActivity implements View.OnClickListener {
+public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.OnClickListener {
     //Instance variables
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private String mCurrentPhotoPath;
