@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette;
+package com.crinite.mike.colorpalette.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.crinite.mike.colorpalette.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     public static int mode = -1;
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.btnTakePhoto:
                 mode = 0;
-                Intent intent = new Intent(this, TakePhotoActivity.class);
+                Intent intent = new Intent(this, ViewPhotoPaletteActivity.class);
                 startActivity(intent);
                 finish();
                 break;
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
-            Intent intent = new Intent(this, TakePhotoActivity.class);
+            Intent intent = new Intent(this, ViewPhotoPaletteActivity.class);
             data.getData();
             intent.putExtra("mCurrentPhotoPath", "");
             startActivity(intent);

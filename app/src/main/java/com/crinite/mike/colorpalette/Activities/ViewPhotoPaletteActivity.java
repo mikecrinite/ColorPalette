@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette;
+package com.crinite.mike.colorpalette.Activities;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -20,6 +20,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.crinite.mike.colorpalette.Objects.Palette;
+import com.crinite.mike.colorpalette.R;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -30,20 +33,11 @@ import java.util.Locale;
  * This activity should be created from the main activity screen when the user chooses
  * to take a picture with the app, rather than upload one from memory
  */
-public class TakePhotoActivity extends AppCompatActivity implements View.OnClickListener {
+public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.OnClickListener {
     //Instance variables
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private String mCurrentPhotoPath;
-    private ColorGrabber cg = ColorGrabber.getInstance();
-    private String color = "#ffffff";
-    private String shade0 = "#ffffff";
-    private String shade1 = "#ffffff";
-    private String shade2 = "#ffffff";
-    private String shade3 = "#ffffff";
-    private String pal0 = "#ffffff";
-    private String pal1 = "#ffffff";
-    private String pal2 = "#ffffff";
-    private String pal3 = "#ffffff";
+    private Palette palette;
 
     //Widget references
     private ImageView mImageView;
@@ -75,7 +69,9 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
             mCurrentPhotoPath = getIntent().getStringExtra("mCurrentPhotoPath");
         }
 
-        // get preferences
+        palette = new Palette();
+
+        // decode preferences
         savedValues = getSharedPreferences("SavedValues", MODE_PRIVATE);
 
         //Get widget references
@@ -199,7 +195,8 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             // Set the imageView pic and grab the color
             setPic();
-            grab();
+            setAllColors();
+            //grab();
         }
     }
 
@@ -226,25 +223,6 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
     }
 
     /**
-     * Uses the ColorGrabber to get the color of the picture
-     */
-    private void grab(){
-        String[] arr = cg.get(mCurrentPhotoPath);
-        color = arr[0];
-        pal0 = arr[1];
-        pal1 = arr[2];
-        pal2 = arr[3];
-        pal3 = arr[4];
-        shade0 = arr[5];
-        shade1 = arr[6];
-        shade2 = arr[7];
-        shade3 = arr[8];
-
-        //Change fields
-        setAllColors();
-    }
-
-    /**
      * Sets a target view's background color to the specified color
      *
      * @param color The color, in hex format, to set
@@ -260,17 +238,19 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
      * Sets the color of all 9 fields
      */
     private void setAllColors(){
-        setColor(color, colorView);
-        setColor(shade0, colorView0);
-        setColor(shade1, colorView1);
-        setColor(shade2, colorView2);
-        setColor(shade3, colorView3);
-        setColor(pal0, colorView4);
-        setColor(pal1, colorView5);
-        setColor(pal2, colorView6);
-        setColor(pal3, colorView7);
+        palette.populate(mCurrentPhotoPath);
 
-        title.setText(color);
+        setColor(palette.getColor(), colorView);
+        setColor(palette.getShade0(), colorView0);
+        setColor(palette.getShade1(), colorView1);
+        setColor(palette.getShade2(), colorView2);
+        setColor(palette.getShade3(), colorView3);
+        setColor(palette.getPal0(), colorView4);
+        setColor(palette.getPal1(), colorView5);
+        setColor(palette.getPal2(), colorView6);
+        setColor(palette.getPal3(), colorView7);
+
+        title.setText(palette.getColor());
     }
 
     /**
@@ -339,28 +319,28 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
                 System.out.println(mCurrentPhotoPath);
                 break;
             case R.id.colorView0:
-                Toast.makeText(this, shade0, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getShade0(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.colorView1:
-                Toast.makeText(this, shade1, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getShade1(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.colorView2:
-                Toast.makeText(this, shade2, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getShade2(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.colorView3:
-                Toast.makeText(this, shade3, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getShade3(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.colorView4:
-                Toast.makeText(this, pal0, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getPal0(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.colorView5:
-                Toast.makeText(this, pal1, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getPal1(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.colorView6:
-                Toast.makeText(this, pal2, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getPal2(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.colorView7:
-                Toast.makeText(this, pal3, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, palette.getPal3(), Toast.LENGTH_SHORT).show();
                 break;
         }
     }

@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette;
+package com.crinite.mike.colorpalette.Services;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -15,17 +15,17 @@ import java.util.Random;
  * @version 0.1
  */
 
-public class ColorGrabber {
-    private static ColorGrabber INSTANCE = null;
+public class ColorGrabberService {
+    private static ColorGrabberService INSTANCE = null;
 
     /**
      * Ensures only a single instance ever exists
      *
-     * @return The single instance of ColorGrabber
+     * @return The single instance of ColorGrabberService
      */
-    public static ColorGrabber getInstance(){
+    public static ColorGrabberService getInstance(){
         if(INSTANCE == null){
-            INSTANCE = new ColorGrabber();
+            INSTANCE = new ColorGrabberService();
         }
         return INSTANCE;
     }
@@ -104,16 +104,23 @@ public class ColorGrabber {
      * @param filepath The filepath where the target file resides
      * @return The color, formatted in hex
      */
-    public String[] get(String filepath){
+    public String[] decode(String filepath){
         try {
-            int[][] colors = ColorGrabber.getInstance()
+            int[][] colors = ColorGrabberService.getInstance()
                     .loadPixelsFromImage(filepath);
-            int decimalColor = ColorGrabber.getInstance().getAverageColor(colors);
+            int decimalColor = ColorGrabberService.getInstance().getAverageColor(colors);
             String[] palette = palette(decimalColor);
             palette[0] = "#" + Integer.toHexString(decimalColor).substring(2);
             return palette;
         }catch(IOException e){
-            return new String[]{"#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"};
+            return new String[]{"#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF",
+                    "#FFFFFF"};
         }
 
     }
