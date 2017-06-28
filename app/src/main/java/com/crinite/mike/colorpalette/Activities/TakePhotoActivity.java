@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette;
+package com.crinite.mike.colorpalette.Activities;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -20,6 +20,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.crinite.mike.colorpalette.Activities.MainActivity;
+import com.crinite.mike.colorpalette.R;
+import com.crinite.mike.colorpalette.Services.ColorGrabberService;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -34,7 +38,7 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
     //Instance variables
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private String mCurrentPhotoPath;
-    private ColorGrabber cg = ColorGrabber.getInstance();
+    private ColorGrabberService cg = ColorGrabberService.getInstance();
     private String color = "#ffffff";
     private String shade0 = "#ffffff";
     private String shade1 = "#ffffff";
@@ -226,7 +230,7 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
     }
 
     /**
-     * Uses the ColorGrabber to get the color of the picture
+     * Uses the ColorGrabberService to get the color of the picture
      */
     private void grab(){
         String[] arr = cg.get(mCurrentPhotoPath);
