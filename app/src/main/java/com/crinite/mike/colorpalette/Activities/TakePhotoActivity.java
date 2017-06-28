@@ -22,7 +22,6 @@ import android.widget.Toast;
 
 import com.crinite.mike.colorpalette.Objects.Palette;
 import com.crinite.mike.colorpalette.R;
-import com.crinite.mike.colorpalette.Services.ColorGrabberService;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,27 +38,6 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private String mCurrentPhotoPath;
     private Palette palette;
-
-    @Deprecated
-    private ColorGrabberService cg = ColorGrabberService.getInstance();
-    @Deprecated
-    private String color = "#ffffff";
-    @Deprecated
-    private String shade0 = "#ffffff";
-    @Deprecated
-    private String shade1 = "#ffffff";
-    @Deprecated
-    private String shade2 = "#ffffff";
-    @Deprecated
-    private String shade3 = "#ffffff";
-    @Deprecated
-    private String pal0 = "#ffffff";
-    @Deprecated
-    private String pal1 = "#ffffff";
-    @Deprecated
-    private String pal2 = "#ffffff";
-    @Deprecated
-    private String pal3 = "#ffffff";
 
     //Widget references
     private ImageView mImageView;
@@ -242,26 +220,6 @@ public class TakePhotoActivity extends AppCompatActivity implements View.OnClick
         // Save a file: path for use with ACTION_VIEW intents
         mCurrentPhotoPath = image.getAbsolutePath();
         return image;
-    }
-
-    /**
-     * Uses the ColorGrabberService to decode the color of the picture
-     */
-    @Deprecated
-    private void grab(){
-        String[] arr = cg.decode(mCurrentPhotoPath);
-        color = arr[0];
-        pal0 = arr[1];
-        pal1 = arr[2];
-        pal2 = arr[3];
-        pal3 = arr[4];
-        shade0 = arr[5];
-        shade1 = arr[6];
-        shade2 = arr[7];
-        shade3 = arr[8];
-
-        //Change fields
-        setAllColors();
     }
 
     /**
