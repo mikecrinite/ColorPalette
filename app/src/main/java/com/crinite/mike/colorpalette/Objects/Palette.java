@@ -25,6 +25,19 @@ public class Palette {
     private String pal2 = "#ffffff";
     private String pal3 = "#ffffff";
 
+    public void populate(int colorCode){
+        String[] arr = cgs.decode(colorCode);
+        color = arr[0];
+        pal0 = arr[1];
+        pal1 = arr[2];
+        pal2 = arr[3];
+        pal3 = arr[4];
+        shade0 = arr[5];
+        shade1 = arr[6];
+        shade2 = arr[7];
+        shade3 = arr[8];
+    }
+
     /**
      * Uses the ColorGrabberService to decode the color of the picture
      */

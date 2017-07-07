@@ -36,8 +36,10 @@ import java.util.Locale;
 public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.OnClickListener {
     //Instance variables
     private static final int REQUEST_IMAGE_CAPTURE = 1;
+    private static final int REQUEST_IMAGE_GALLERY = 2;
     private String mCurrentPhotoPath;
     private Palette palette;
+    private Bitmap image = null;
 
     //Widget references
     private ImageView mImageView;
@@ -89,6 +91,7 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         fabPhoto = (FloatingActionButton) findViewById(R.id.fabPhoto);
 
         //Set up listeners
+        mImageView.setOnClickListener(this);
         fabPhoto.setOnClickListener(this);
         fabPhoto.bringToFront();
         colorView0.setOnClickListener(this);
@@ -185,6 +188,16 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     }
 
     /**
+     * Desclares intent to have the user select the image from a gallery
+     */
+    private void dispatchChoosePictureIntent(){
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("image/*");
+        startActivityForResult(intent, REQUEST_IMAGE_GALLERY);
+    }
+
+    /**
      * Completes tasked that are waiting for a particular activity, i.e. a camera action
      * @param requestCode Automatically filled
      * @param resultCode Automatically filled
@@ -196,7 +209,18 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
             // Set the imageView pic and grab the color
             setPic();
             setAllColors();
-            //grab();
+        }else if(requestCode == REQUEST_IMAGE_GALLERY && resultCode == RESULT_OK){
+            Uri uri = data.getData();
+            try {
+                image = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
+                mCurrentPhotoPath = null;
+                setPic(image);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+            //mCurrentPhotoPath = uri.getPath();
+            //setPic();
+            //setAllColors();
         }
     }
 
@@ -253,10 +277,7 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         title.setText(palette.getColor());
     }
 
-    /**
-     * Changes the image in the imageView to the captured image
-     */
-    private void setPic() {
+    private void setPic(){
         if(!mCurrentPhotoPath.equals("empty") && mCurrentPhotoPath != null){
             // Get the dimensions of the View
             int targetW = mImageView.getWidth();
@@ -280,6 +301,32 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
             Bitmap bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
             mImageView.setImageBitmap(bitmap);
         }
+    }
+
+    private void setPic(String hexcode){
+        int color = Color.parseColor(hexcode);
+        mImageView.setBackgroundColor(color);
+        palette.populate(color);
+    }
+
+    /**
+     * Sets the picture from a given bitmap
+     * @param photo Bitmap to set
+     */
+    private void setPic(Bitmap photo){
+        // Get dimensions of photo
+        int photoW = photo.getWidth();
+        int photoH = photo.getHeight();
+
+        // Get height of imageview for scaling
+        int targetH = mImageView.getHeight();
+        int scaleFactor = photoH/targetH;
+
+        // Get new dimensions
+        photoW = photoW * scaleFactor;
+        photoH = photoH * scaleFactor;
+
+        mImageView.setImageBitmap(Bitmap.createScaledBitmap(photo, photoW, photoH, true));
     }
 
     /**
@@ -341,6 +388,10 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
                 break;
             case R.id.colorView7:
                 Toast.makeText(this, palette.getPal3(), Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mImageView:
+                //Toast.makeText(this, "not yet implemented", Toast.LENGTH_SHORT).show();
+                dispatchChoosePictureIntent();
                 break;
         }
     }
