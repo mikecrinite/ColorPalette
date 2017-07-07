@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.crinite.mike.colorpalette.Activities.ViewPhotoPaletteActivity">
+    tools:context="com.crinite.mike.colorpalette.activities.ViewPhotoPaletteActivity">
 
     <include layout="@layout/content_take_photo"
         android:id="@+id/include" />

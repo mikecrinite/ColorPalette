@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette.Services;
+package com.crinite.mike.colorpalette.services;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

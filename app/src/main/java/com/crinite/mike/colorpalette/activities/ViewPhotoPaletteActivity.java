@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette.Activities;
+package com.crinite.mike.colorpalette.activities;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.crinite.mike.colorpalette.Objects.Palette;
+import com.crinite.mike.colorpalette.objects.Palette;
 import com.crinite.mike.colorpalette.R;
 
 import java.io.File;
