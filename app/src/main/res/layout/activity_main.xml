@@ -15,19 +15,19 @@
         <TableRow>
 
             <Button
-                android:id="@+id/btnTakePhoto"
+                android:id="@+id/btnMakePalette"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Take Photo" />
+                android:text="Make Palette" />
         </TableRow>
 
         <TableRow>
 
             <Button
-                android:id="@+id/btnUploadPhoto"
+                android:id="@+id/btnViewPalette"
                 android:layout_gravity="center"
-                android:text="Upload Photo" />
+                android:text="View Palette" />
         </TableRow>
 
     </TableLayout>

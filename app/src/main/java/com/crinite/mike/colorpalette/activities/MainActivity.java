@@ -12,12 +12,9 @@ import android.widget.Toast;
 import com.crinite.mike.colorpalette.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    public static int mode = -1;
-    public static final int PICK_IMAGE = 1;
-
     //Widgets
-    private Button btnTakePhoto;
-    private Button btnUploadPhoto;
+    private Button btnMakePalette;
+    private Button btnViewPalette;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //Get widget References
-        btnTakePhoto = (Button) findViewById(R.id.btnTakePhoto);
-        btnUploadPhoto = (Button) findViewById(R.id.btnUploadPhoto);
+        btnMakePalette = (Button) findViewById(R.id.btnMakePalette);
+        btnViewPalette = (Button) findViewById(R.id.btnViewPalette);
 
         //Set up listeners
-        btnTakePhoto.setOnClickListener(this);
-        btnUploadPhoto.setOnClickListener(this);
+        btnMakePalette.setOnClickListener(this);
+        btnViewPalette.setOnClickListener(this);
     }
 
     /**
@@ -41,43 +38,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view){
         switch (view.getId()) {
-            case R.id.btnTakePhoto:
-                mode = 0;
-                Intent intent = new Intent(this, ViewPhotoPaletteActivity.class);
+            case R.id.btnMakePalette:
+                Intent intent = new Intent(this, MakePhotoPaletteActivity.class);
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.btnUploadPhoto:
-                mode = 1;
-                //dispatchSelectImageIntent();
+            case R.id.btnViewPalette:
                 Toast.makeText(this, "This feature is not yet implemented", Toast.LENGTH_SHORT).show();
                 break;
 
-        }
-    }
-
-    private void dispatchSelectImageIntent(){
-        Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
-        getIntent.setType("image/*");
-
-        Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        pickIntent.setType("image/*");
-
-        Intent chooserIntent = Intent.createChooser(getIntent, "Select Image");
-        chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {pickIntent});
-
-        startActivityForResult(chooserIntent, PICK_IMAGE);
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
-            Intent intent = new Intent(this, ViewPhotoPaletteActivity.class);
-            data.getData();
-            intent.putExtra("mCurrentPhotoPath", "");
-            startActivity(intent);
-            finish();
         }
     }
 
