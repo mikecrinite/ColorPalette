@@ -383,7 +383,7 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
      * @return True if valid hex, False if invalid hex
      */
     private boolean isValidHexcode(String hexcode) {
-        Matcher matcher = Pattern.compile("^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$").matcher(hexcode);
+        Matcher matcher = Pattern.compile("^#([A-Fa-f0-9]{6})$").matcher(hexcode);
         //TODO: Investigate why inputting an invalid hex code does not cause this method to return false, thus defeating its purpose entirely
         return matcher.matches();
     }
