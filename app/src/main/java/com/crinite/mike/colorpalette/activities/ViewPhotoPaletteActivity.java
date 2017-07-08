@@ -1,6 +1,7 @@
 package com.crinite.mike.colorpalette.activities;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -13,9 +14,11 @@ import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +33,8 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * This activity should be created from the main activity screen when the user chooses
@@ -40,6 +45,7 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final int REQUEST_IMAGE_GALLERY = 2;
     private String mCurrentPhotoPath;
+    private String hexcode = "";
     private Palette palette;
 
     //Widget references
@@ -92,7 +98,6 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         fabPhoto = (FloatingActionButton) findViewById(R.id.fabPhoto);
 
         //Set up listeners
-        mImageView.setOnClickListener(this);
         fabPhoto.setOnClickListener(this);
         fabPhoto.bringToFront();
         colorView0.setOnClickListener(this);
@@ -290,21 +295,24 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     private void setAllColors(){
         if(mCurrentPhotoPath != null && mCurrentPhotoPath.length() > 0) {
             palette.populate(mCurrentPhotoPath);
-
-            setColor(palette.getColor(), colorView);
-            setColor(palette.getShade0(), colorView0);
-            setColor(palette.getShade1(), colorView1);
-            setColor(palette.getShade2(), colorView2);
-            setColor(palette.getShade3(), colorView3);
-            setColor(palette.getPal0(), colorView4);
-            setColor(palette.getPal1(), colorView5);
-            setColor(palette.getPal2(), colorView6);
-            setColor(palette.getPal3(), colorView7);
-
-            title.setText(palette.getColor());
         }
+
+        setColor(palette.getColor(), colorView);
+        setColor(palette.getShade0(), colorView0);
+        setColor(palette.getShade1(), colorView1);
+        setColor(palette.getShade2(), colorView2);
+        setColor(palette.getShade3(), colorView3);
+        setColor(palette.getPal0(), colorView4);
+        setColor(palette.getPal1(), colorView5);
+        setColor(palette.getPal2(), colorView6);
+        setColor(palette.getPal3(), colorView7);
+
+        title.setText(palette.getColor());
     }
 
+    /**
+     * Sets mImageView's image when mCurrentPhotoPath is set
+     */
     private void setPic(){
         if(!mCurrentPhotoPath.equals("empty") && mCurrentPhotoPath != null){
             // Get the dimensions of the View
@@ -331,11 +339,22 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         }
     }
 
+    /**
+     * Sets the background of mImageView to the hex color code provided
+     *
+     * @param hexcode Color to set background, formatted as a hex string
+     */
     private void setPic(String hexcode){
-        int color = Color.parseColor(hexcode);
-        mImageView.setBackgroundColor(color);
-        palette.populate(color);
-
+        if(isValidHexcode(hexcode)) {
+            mCurrentPhotoPath = null;
+            mImageView.setImageBitmap(null);
+            int color = Color.parseColor(hexcode);
+            mImageView.setBackgroundColor(color);
+            palette.populate(color);
+            setAllColors();
+        }else{
+            Toast.makeText(this, "Invalid hex color code", Toast.LENGTH_SHORT);
+        }
     }
 
     /**
@@ -359,6 +378,46 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     }
 
     /**
+     * Validate hex with regular expression
+     * @param hexcode hex for validation
+     * @return True if valid hex, False if invalid hex
+     */
+    private boolean isValidHexcode(String hexcode) {
+        Matcher matcher = Pattern.compile("^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$").matcher(hexcode);
+        //TODO: Investigate why inputting an invalid hex code does not cause this method to return false, thus defeating its purpose entirely
+        return matcher.matches();
+    }
+
+    /**
+     * Creates an AlertDialog to prompt the user for a hex color code string
+     */
+    private void promptForHexcode(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Input hexcode");
+
+        // Set up the input
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
+        builder.setView(input);
+
+        // Set up the buttons
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                setPic(input.getText().toString());
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        builder.show();
+    }
+
+    /**
      * Invokes the scanner to add the taken picture to the gallery
      * For now, we're not going to use this because we expect most of the
      * pictures to be images that the user doesn't particularly want to view again.
@@ -371,6 +430,10 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         this.sendBroadcast(mediaScanIntent);
     }
 
+    /**
+     * Shows an AlertDialog to inform the user of best image-taking practices for the purpose
+     * of this app
+     */
     private void showAlert(){
         //TODO: Make a setting to not show this again
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -383,6 +446,36 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     }
 
     /**
+     * Builds an AlertDialog in order to allow the user to select the method from which their
+     * palette will be generated
+     */
+    private void showOptions(){
+        AlertDialog.Builder optionsDialog = new AlertDialog.Builder(this);
+        optionsDialog.setTitle("Choose source");
+        optionsDialog.setCancelable(true);
+
+        CharSequence options[] = new CharSequence[] {"Take a Photo", "Select From Gallery", "Input Hex Code"};
+        optionsDialog.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // the user clicked on colors[which]
+                switch(which){
+                    case 0:
+                        dispatchTakePictureIntent();
+                        break;
+                    case 1:
+                        dispatchChoosePictureIntent();
+                        break;
+                    case 2:
+                        promptForHexcode();
+                        break;
+                }
+            }
+        });
+        optionsDialog.show();
+    }
+
+    /**
      * Click handler
      *
      * @param view Current view
@@ -391,8 +484,7 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     public void onClick(View view){
         switch (view.getId()) {
             case R.id.fabPhoto:
-                dispatchTakePictureIntent();
-                System.out.println(mCurrentPhotoPath);
+                showOptions();
                 break;
             case R.id.colorView0:
                 Toast.makeText(this, palette.getShade0(), Toast.LENGTH_SHORT).show();
@@ -417,10 +509,6 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
                 break;
             case R.id.colorView7:
                 Toast.makeText(this, palette.getPal3(), Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.mImageView:
-                //Toast.makeText(this, "not yet implemented", Toast.LENGTH_SHORT).show();
-                dispatchChoosePictureIntent();
                 break;
         }
     }

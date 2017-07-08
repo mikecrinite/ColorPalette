@@ -191,6 +191,7 @@ public class ColorGrabberService {
      * @return The created shade
      */
     private int shade(int color, float offset){
+        //TODO: All of a sudden this isn't making shades, it's just basically showing the same color as the original
         float[] hsv = new float[3];
         int alpha = Color.alpha(color);
         Color.colorToHSV(color, hsv);
