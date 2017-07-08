@@ -1,5 +1,14 @@
 *.iml
-.gradle
+*.gradle
+gradle.*
+gradle/
+gradlew
+gradlew.*
+gradle.properties
+
+settings.gradle
+build.gradle
+.idea/
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
