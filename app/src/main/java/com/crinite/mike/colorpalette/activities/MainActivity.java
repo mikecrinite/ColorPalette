@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static final int PICK_IMAGE = 1;
 
     //Widgets
-    private Button btnTakePhoto;
-    private Button btnUploadPhoto;
+    private Button btnMakePalette;
+    private Button btnViewPalette;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //Get widget References
-        btnTakePhoto = (Button) findViewById(R.id.btnTakePhoto);
-        btnUploadPhoto = (Button) findViewById(R.id.btnUploadPhoto);
+        btnMakePalette = (Button) findViewById(R.id.btnMakePalette);
+        btnViewPalette = (Button) findViewById(R.id.btnViewPalette);
 
         //Set up listeners
-        btnTakePhoto.setOnClickListener(this);
-        btnUploadPhoto.setOnClickListener(this);
+        btnMakePalette.setOnClickListener(this);
+        btnViewPalette.setOnClickListener(this);
     }
 
     /**
@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view){
         switch (view.getId()) {
-            case R.id.btnTakePhoto:
+            case R.id.btnMakePalette:
                 mode = 0;
                 Intent intent = new Intent(this, ViewPhotoPaletteActivity.class);
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.btnUploadPhoto:
+            case R.id.btnViewPalette:
                 mode = 1;
                 //dispatchSelectImageIntent();
                 Toast.makeText(this, "This feature is not yet implemented", Toast.LENGTH_SHORT).show();
