@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette.Activities;
+package com.crinite.mike.colorpalette.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         >
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,10 +25,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.ViewPhotoPaletteActivity"
+            android:name=".activities.ViewPhotoPaletteActivity"
             android:label="@string/title_activity_take_photo"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="com.crinite.mike.colorpalette.Activities.MainActivity">
+            android:parentActivityName="com.crinite.mike.colorpalette.activities.MainActivity">
         </activity>
 
         <provider

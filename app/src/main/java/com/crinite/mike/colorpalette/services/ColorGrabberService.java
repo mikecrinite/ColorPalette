@@ -1,4 +1,4 @@
-package com.crinite.mike.colorpalette.Services;
+package com.crinite.mike.colorpalette.services;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -102,7 +102,7 @@ public class ColorGrabberService {
      * color of the image
      *
      * @param filepath The filepath where the target file resides
-     * @return The color, formatted in hex
+     * @return String array of colors, formatted as hex strings
      */
     public String[] decode(String filepath){
         try {
@@ -123,6 +123,19 @@ public class ColorGrabberService {
                     "#FFFFFF"};
         }
 
+    }
+
+    /**
+     * Generates a palette when a color is provided, rather than determining
+     * an average color from a picture
+     *
+     * @param color Provided integer color code
+     * @return String array of colors, formatted as hex strings
+     */
+    public String[] decode(int color){
+        String[] palette = palette(color);
+        palette[0] = "#" + Integer.toHexString(color).substring(2);
+        return palette;
     }
 
     /**
