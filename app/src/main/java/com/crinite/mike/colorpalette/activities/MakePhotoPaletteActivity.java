@@ -73,10 +73,6 @@ public class MakePhotoPaletteActivity extends AppCompatActivity implements View.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take_photo);
 
-        if(MainActivity.mode == 1) {
-            mCurrentPhotoPath = getIntent().getStringExtra("mCurrentPhotoPath");
-        }
-
         palette = new Palette();
 
         // decode preferences

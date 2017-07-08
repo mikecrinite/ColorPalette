@@ -12,9 +12,6 @@ import android.widget.Toast;
 import com.crinite.mike.colorpalette.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    public static int mode = -1;
-    public static final int PICK_IMAGE = 1;
-
     //Widgets
     private Button btnMakePalette;
     private Button btnViewPalette;
@@ -42,42 +39,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view){
         switch (view.getId()) {
             case R.id.btnMakePalette:
-                mode = 0;
                 Intent intent = new Intent(this, MakePhotoPaletteActivity.class);
                 startActivity(intent);
                 finish();
                 break;
             case R.id.btnViewPalette:
-                mode = 1;
-                //dispatchSelectImageIntent();
                 Toast.makeText(this, "This feature is not yet implemented", Toast.LENGTH_SHORT).show();
                 break;
 
-        }
-    }
-
-    private void dispatchSelectImageIntent(){
-        Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
-        getIntent.setType("image/*");
-
-        Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        pickIntent.setType("image/*");
-
-        Intent chooserIntent = Intent.createChooser(getIntent, "Select Image");
-        chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {pickIntent});
-
-        startActivityForResult(chooserIntent, PICK_IMAGE);
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
-            Intent intent = new Intent(this, MakePhotoPaletteActivity.class);
-            data.getData();
-            intent.putExtra("mCurrentPhotoPath", "");
-            startActivity(intent);
-            finish();
         }
     }
 
