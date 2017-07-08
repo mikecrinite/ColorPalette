@@ -45,7 +45,6 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final int REQUEST_IMAGE_GALLERY = 2;
     private String mCurrentPhotoPath;
-    private String hexcode = "";
     private Palette palette;
 
     //Widget references
