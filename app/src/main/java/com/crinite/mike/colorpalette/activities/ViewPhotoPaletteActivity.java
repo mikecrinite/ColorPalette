@@ -20,11 +20,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.crinite.mike.colorpalette.objects.Palette;
 import com.crinite.mike.colorpalette.R;
+import com.crinite.mike.colorpalette.objects.Palette;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -39,7 +41,6 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
     private static final int REQUEST_IMAGE_GALLERY = 2;
     private String mCurrentPhotoPath;
     private Palette palette;
-    private Bitmap image = null;
 
     //Widget references
     private ImageView mImageView;
@@ -194,11 +195,28 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("image/*");
-        startActivityForResult(intent, REQUEST_IMAGE_GALLERY);
+        if(intent.resolveActivity(getPackageManager()) != null){
+            //Create the File where the photo should go
+            File photoFile = null;
+            try {
+                photoFile = createImageFile();
+            }catch(IOException ex){
+                //Error occured while creating the File
+                System.out.println("Error occurred while creating the File");
+            }
+            // Continue only if the File was successfully created
+            if(photoFile != null){
+                Uri photoURI = FileProvider.getUriForFile(this,
+                        "com.crinite.mike.colorpalette",
+                        photoFile);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                startActivityForResult(intent, REQUEST_IMAGE_GALLERY);
+            }
+        }
     }
 
     /**
-     * Completes tasked that are waiting for a particular activity, i.e. a camera action
+     * Completes tasks that are waiting for a particular activity, i.e. a camera action
      * @param requestCode Automatically filled
      * @param resultCode Automatically filled
      * @param data Automatically filled
@@ -212,15 +230,23 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         }else if(requestCode == REQUEST_IMAGE_GALLERY && resultCode == RESULT_OK){
             Uri uri = data.getData();
             try {
-                image = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
-                mCurrentPhotoPath = null;
-                setPic(image);
-            }catch(Exception e){
-                e.printStackTrace();
+                InputStream imageStream = getContentResolver().openInputStream(uri);
+                Bitmap image = BitmapFactory.decodeStream(imageStream);
+
+                /*
+                 * This is sort of workaround-y
+                 * Basically, since you can't easily get a filepath from the image
+                 * gallery (why not? who knows...), we first create a file at the filepath
+                 * just like we did when we took a picture, and then we just send the image to
+                 * the file at that path
+                 */
+                FileOutputStream outputStream = new FileOutputStream(mCurrentPhotoPath);
+                image.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
+                setPic();
+                setAllColors();
+            }catch(IOException ioe){
+                ioe.printStackTrace();
             }
-            //mCurrentPhotoPath = uri.getPath();
-            //setPic();
-            //setAllColors();
         }
     }
 
@@ -262,19 +288,21 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
      * Sets the color of all 9 fields
      */
     private void setAllColors(){
-        palette.populate(mCurrentPhotoPath);
+        if(mCurrentPhotoPath != null && mCurrentPhotoPath.length() > 0) {
+            palette.populate(mCurrentPhotoPath);
 
-        setColor(palette.getColor(), colorView);
-        setColor(palette.getShade0(), colorView0);
-        setColor(palette.getShade1(), colorView1);
-        setColor(palette.getShade2(), colorView2);
-        setColor(palette.getShade3(), colorView3);
-        setColor(palette.getPal0(), colorView4);
-        setColor(palette.getPal1(), colorView5);
-        setColor(palette.getPal2(), colorView6);
-        setColor(palette.getPal3(), colorView7);
+            setColor(palette.getColor(), colorView);
+            setColor(palette.getShade0(), colorView0);
+            setColor(palette.getShade1(), colorView1);
+            setColor(palette.getShade2(), colorView2);
+            setColor(palette.getShade3(), colorView3);
+            setColor(palette.getPal0(), colorView4);
+            setColor(palette.getPal1(), colorView5);
+            setColor(palette.getPal2(), colorView6);
+            setColor(palette.getPal3(), colorView7);
 
-        title.setText(palette.getColor());
+            title.setText(palette.getColor());
+        }
     }
 
     private void setPic(){
@@ -307,6 +335,7 @@ public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.
         int color = Color.parseColor(hexcode);
         mImageView.setBackgroundColor(color);
         palette.populate(color);
+
     }
 
     /**
