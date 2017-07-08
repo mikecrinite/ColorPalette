@@ -40,7 +40,7 @@ import java.util.regex.Pattern;
  * This activity should be created from the main activity screen when the user chooses
  * to take a picture with the app, rather than upload one from memory
  */
-public class ViewPhotoPaletteActivity extends AppCompatActivity implements View.OnClickListener {
+public class MakePhotoPaletteActivity extends AppCompatActivity implements View.OnClickListener {
     //Instance variables
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final int REQUEST_IMAGE_GALLERY = 2;

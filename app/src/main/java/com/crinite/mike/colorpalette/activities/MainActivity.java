@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.btnMakePalette:
                 mode = 0;
-                Intent intent = new Intent(this, ViewPhotoPaletteActivity.class);
+                Intent intent = new Intent(this, MakePhotoPaletteActivity.class);
                 startActivity(intent);
                 finish();
                 break;
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
-            Intent intent = new Intent(this, ViewPhotoPaletteActivity.class);
+            Intent intent = new Intent(this, MakePhotoPaletteActivity.class);
             data.getData();
             intent.putExtra("mCurrentPhotoPath", "");
             startActivity(intent);
