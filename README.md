@@ -3,4 +3,5 @@ A simple app that allows a user to either take a photo, select one from the gall
 
 ### Planned features
 * Display the name of the closest known color
+* * Scrape Wikipedia's color page regularly for a full list of colors
 * Save a color palette for future use
