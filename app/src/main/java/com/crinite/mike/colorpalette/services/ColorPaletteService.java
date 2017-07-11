@@ -15,17 +15,17 @@ import java.util.Random;
  * @version 0.1
  */
 
-public class ColorGrabberService {
-    private static ColorGrabberService INSTANCE = null;
+public class ColorPaletteService {
+    private static ColorPaletteService INSTANCE = null;
 
     /**
      * Ensures only a single instance ever exists
      *
-     * @return The single instance of ColorGrabberService
+     * @return The single instance of ColorPaletteService
      */
-    public static ColorGrabberService getInstance(){
+    public static ColorPaletteService getInstance(){
         if(INSTANCE == null){
-            INSTANCE = new ColorGrabberService();
+            INSTANCE = new ColorPaletteService();
         }
         return INSTANCE;
     }
@@ -106,9 +106,9 @@ public class ColorGrabberService {
      */
     public String[] decode(String filepath){
         try {
-            int[][] colors = ColorGrabberService.getInstance()
+            int[][] colors = ColorPaletteService.getInstance()
                     .loadPixelsFromImage(filepath);
-            int decimalColor = ColorGrabberService.getInstance().getAverageColor(colors);
+            int decimalColor = ColorPaletteService.getInstance().getAverageColor(colors);
             String[] palette = palette(decimalColor);
             palette[0] = "#" + Integer.toHexString(decimalColor).substring(2);
             return palette;
