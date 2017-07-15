@@ -1,13 +1,14 @@
 package com.crinite.mike.colorpalette.services;
 
 import com.crinite.mike.colorpalette.activities.MakePhotoPaletteActivity;
+import com.crinite.mike.colorpalette.objects.ColorAssociation;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedHashMap;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * The ColorDictionaryService contains a LinkedHashMap color names and their integer color value, as
@@ -16,7 +17,7 @@ import java.util.Set;
  */
 public class ColorDictionaryService {
     private static ColorDictionaryService INSTANCE = null;
-    private LinkedHashMap<String, Integer> colorMap = new LinkedHashMap<>();
+    private ArrayList<ColorAssociation> colorList = new ArrayList<>();
 
     public ColorDictionaryService(){
         try {
@@ -28,14 +29,16 @@ public class ColorDictionaryService {
             String line;
             String[] vals;
             String name;
+            String hex;
             int value;
             while((line = br.readLine()) != null){
                 vals = line.split(" : ");
                 name = vals[0];
-                value = ColorService.getInstance().colorFromHex(vals[1]);
-                this.colorMap.put(name, value);
+                hex = vals[1];
+                value = ColorService.getInstance().colorFromHex(hex);
+                colorList.add(new ColorAssociation(name, hex, value));
             }
-            sortColorMap(); //TODO: Functionality
+            sortColorMap();
 
         }catch(FileNotFoundException fnfe){
             fnfe.printStackTrace();
@@ -61,19 +64,19 @@ public class ColorDictionaryService {
     public String closestColor(int color) {
         String closest = "none";
         int value, distance;
-        int diff = -5;
-        Set<String> keys = colorMap.keySet();
-        for(String key : keys){
-            value = colorMap.get(key);
-            distance = Math.abs(color - value);
-            if(diff != -5){
-                if(distance < diff){
-                    closest = key;
-                    diff = distance;
-                }
-            }else{
-                closest = key;
-                diff = Math.abs(color - value);
+        int difference = 999999999; //difference between current color and provided color
+        for(ColorAssociation ca : colorList){
+            value = ca.getColor();
+            distance = Math.abs(value - color);
+            if(closest.equals("none")){
+                difference = distance;
+                closest = ca.getName();
+            }else if(distance < difference){
+                difference = distance;
+                closest = ca.getName();
+            }
+            if(difference == 0){
+                return closest;
             }
         }
         return closest;
@@ -89,6 +92,6 @@ public class ColorDictionaryService {
     }
 
     private void sortColorMap() {
-        //TODO: Implement sorting the colorMap
+        Collections.sort(colorList);
     }
 }
