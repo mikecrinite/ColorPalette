@@ -5,4 +5,8 @@
     <string name="awaiting_photo">Awaiting Photo!</string>
     <string name="color_palette">Color Palette</string>
     <string name="complementary_colors">Complementary Colors</string>
+
+    <string name="title_activity_colors_view">ColorsViewActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
