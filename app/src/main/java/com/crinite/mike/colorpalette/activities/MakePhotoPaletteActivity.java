@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -25,6 +26,7 @@ import android.widget.Toast;
 
 import com.crinite.mike.colorpalette.R;
 import com.crinite.mike.colorpalette.objects.Palette;
+import com.crinite.mike.colorpalette.services.ColorDictionaryService;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -46,6 +48,12 @@ public class MakePhotoPaletteActivity extends AppCompatActivity implements View.
     private static final int REQUEST_IMAGE_GALLERY = 2;
     private String mCurrentPhotoPath;
     private Palette palette;
+
+    //Services
+    private ColorDictionaryService cds;
+
+    //Other
+    public static AssetManager assMan;
 
     //Widget references
     private ImageView mImageView;
@@ -106,6 +114,10 @@ public class MakePhotoPaletteActivity extends AppCompatActivity implements View.
 
         //Set colorView's size equal to its width
         colorView.setHeight(colorView.getWidth());
+
+        //Set up asset manager
+        assMan = getAssets();
+        cds = ColorDictionaryService.getInstance();
 
         showAlert();
     }
@@ -302,6 +314,7 @@ public class MakePhotoPaletteActivity extends AppCompatActivity implements View.
         setColor(palette.getPal2(), colorView6);
         setColor(palette.getPal3(), colorView7);
 
+        //title.setText(cds.closestColor(palette.getColor()) + "~" + palette.getColor());
         title.setText(palette.getColor());
     }
 
