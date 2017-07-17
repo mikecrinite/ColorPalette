@@ -94,4 +94,13 @@ public class ColorDictionaryService {
     private void sortColorMap() {
         Collections.sort(colorList);
     }
+
+    public ArrayList<ColorAssociation> getColorList() {
+        return colorList;
+    }
+
+    public void setColorList(ArrayList<ColorAssociation> colorList) {
+        this.colorList = colorList;
+    }
+
 }
