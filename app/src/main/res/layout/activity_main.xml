@@ -30,6 +30,15 @@
                 android:text="View Palette" />
         </TableRow>
 
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnViewColours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View Colours" />
+        </TableRow>
     </TableLayout>
 
 
