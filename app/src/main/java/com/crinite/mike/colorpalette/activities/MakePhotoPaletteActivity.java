@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -53,7 +52,6 @@ public class MakePhotoPaletteActivity extends AppCompatActivity implements View.
     private ColorDictionaryService cds;
 
     //Other
-    public static AssetManager assMan;
 
     //Widget references
     private ImageView mImageView;
@@ -115,8 +113,6 @@ public class MakePhotoPaletteActivity extends AppCompatActivity implements View.
         //Set colorView's size equal to its width
         colorView.setHeight(colorView.getWidth());
 
-        //Set up asset manager
-        assMan = getAssets();
         cds = ColorDictionaryService.getInstance();
 
         showAlert();

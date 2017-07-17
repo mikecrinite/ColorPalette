@@ -1,6 +1,6 @@
 package com.crinite.mike.colorpalette.services;
 
-import com.crinite.mike.colorpalette.activities.MakePhotoPaletteActivity;
+import com.crinite.mike.colorpalette.activities.MainActivity;
 import com.crinite.mike.colorpalette.objects.ColorAssociation;
 
 import java.io.BufferedReader;
@@ -22,7 +22,7 @@ public class ColorDictionaryService {
     public ColorDictionaryService(){
         try {
             //Set up reader to read from wikipedia color file
-            InputStreamReader is = new InputStreamReader(MakePhotoPaletteActivity.assMan.open("wikipedia_07_11_2017.txt"));
+            InputStreamReader is = new InputStreamReader(MainActivity.assMan.open("wikipedia_07_11_2017.txt"));
             BufferedReader br = new BufferedReader(is);
 
             // Fill up colorMap

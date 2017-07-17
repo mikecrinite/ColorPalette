@@ -1,6 +1,7 @@
 package com.crinite.mike.colorpalette.activities;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -15,6 +16,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Widgets
     private Button btnMakePalette;
     private Button btnViewPalette;
+    private Button btnViewColours;
+
+    //Other
+    public static AssetManager assMan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +29,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Get widget References
         btnMakePalette = (Button) findViewById(R.id.btnMakePalette);
         btnViewPalette = (Button) findViewById(R.id.btnViewPalette);
+        btnViewColours = (Button) findViewById(R.id.btnViewColours); // The "u" is so they're the same length
 
         //Set up listeners
         btnMakePalette.setOnClickListener(this);
         btnViewPalette.setOnClickListener(this);
+        btnViewColours.setOnClickListener(this);
+
+        //Set up asset manager
+        assMan = getAssets();
     }
 
     /**
@@ -46,7 +56,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnViewPalette:
                 Toast.makeText(this, "This feature is not yet implemented", Toast.LENGTH_SHORT).show();
                 break;
-
+            case R.id.btnViewColours:
+                startActivity(new Intent(this, ColorsViewActivity.class));
+                finish();
+                break;
         }
     }
 
