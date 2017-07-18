@@ -27,4 +27,5 @@ The colors can be displayed against a white or black background, toggleable by t
 * Selected shades are basically being created as colors indistinguishable from the original color
 * There's no actual scrollbar in the scrolling "View Colors" section
 * Some of the colors are still mismatched (possibly even in the screenshots :poop:)
+  * Problem near "pastel violet"
 * Nobody is reading this, it's really just a buglist for me
