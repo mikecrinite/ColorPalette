@@ -22,7 +22,7 @@ public class ColorDictionaryService {
     public ColorDictionaryService(){
         try {
             //Set up reader to read from wikipedia color file
-            InputStreamReader is = new InputStreamReader(MainActivity.assMan.open("wikipedia_07_11_2017.txt"));
+            InputStreamReader is = new InputStreamReader(MainActivity.assMan.open("wikipedia_07_17_2017.txt"));
             BufferedReader br = new BufferedReader(is);
 
             // Fill up colorMap

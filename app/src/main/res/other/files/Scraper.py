@@ -43,13 +43,14 @@ index_of_pat = colors_n_z_a.index("St. Patrick's blue")
 colors_n_z_a[index_of_pat] = "Saint Patrick's Blue"
 
 # Now we can continue
-messy_list = sorted(itertools.chain(colors_a_f_a[9:], colors_a_f_th[10:], colors_g_m_a[9:],
-                                    colors_g_m_th[10:], colors_n_z_a[9:], colors_n_z_th[10:]))
+messy_list = [x.lower() for x in itertools.chain(colors_a_f_a[9:], colors_a_f_th[10:], colors_g_m_a[9:],
+                                                 colors_g_m_th[10:], colors_n_z_a[9:], colors_n_z_th[10:])]
+sorted_list = sorted(messy_list)
 
 hexes = list(itertools.chain(hex_a_f, hex_g_m, hex_n_z))
 colors = []
 
-for x in messy_list:
+for x in sorted_list:
     if x != '\n' \
             and x != 'Hex' \
             and x != 'Hue' \
@@ -64,7 +65,7 @@ print("Colors ", len(colors), ": ", colors)
 print("Hex Codes ", len(hexes), ": ", hexes)
 
 with open("out.txt", 'w') as f2:
-    #print("{", file=f2)
+    # print("{", file=f2)
     for i, x in enumerate(colors):
         print(colors[i], ":", hexes[i], file=f2)
-    #print("}", file=f2)
+        # print("}", file=f2)
