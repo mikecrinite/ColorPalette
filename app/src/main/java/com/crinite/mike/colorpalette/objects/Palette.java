@@ -130,7 +130,10 @@ public class Palette {
         return pal3;
     }
 
-    public String saveString(){
+    /**
+     * Creates a single string containing all the values in the palette object.
+     */
+    public String saveToString(){
         String result = "";
         result += color + "&";
         result += shade0 + "&";
@@ -142,6 +145,27 @@ public class Palette {
         result += pal2 + "&";
         result += pal3;
         return result;
+    }
+
+    /**
+     * Restores a palette from a saved String
+     * @param savedString The result of saveToString()
+     * @return true if valid
+     */
+    public boolean restoreFromString(String savedString){
+        if(savedString == null || savedString.length() < 1){return false;}
+        String[] colors = savedString.split("&");
+        if(colors.length < 9){return false;}
+        color = colors[0];
+        shade0 = colors[1];
+        shade1 = colors[2];
+        shade2 = colors[3];
+        shade3 = colors[4];
+        pal0 = colors[5];
+        pal1 = colors[6];
+        pal2 = colors[7];
+        pal3 = colors[8];
+        return true;
     }
 
     @Override

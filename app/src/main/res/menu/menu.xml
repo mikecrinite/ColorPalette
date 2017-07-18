@@ -1,7 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/menu_new_game"
-        android:title="Ayy Brother"
-        app:showAsAction="never" />
+    <item android:id="@+id/save_color_palette"
+        android:title="Save This Palette"/>
+    <item android:id="@+id/load_a_color_palette"
+        android:title="Load a Color Palette"/>
 
 </menu>
