@@ -51,14 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnMakePalette:
                 Intent intent = new Intent(this, MakePhotoPaletteActivity.class);
                 startActivity(intent);
-                finish();
                 break;
             case R.id.btnViewPalette:
                 Toast.makeText(this, "This feature is not yet implemented", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnViewColours:
                 startActivity(new Intent(this, ColorsViewActivity.class));
-                finish();
                 break;
         }
     }
