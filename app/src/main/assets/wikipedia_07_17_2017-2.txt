@@ -1,0 +1,1486 @@
+absolute zero : #0048BA
+acajou : #4C2F27
+acid green : #B0BF1A
+aero : #7CB9E8
+aero blue : #C9FFE5
+african violet : #B284BE
+air force blue raf : #5D8AA8
+air force blue usaf : #00308F
+air superiority blue : #72A0C1
+alabama crimson : #AF002A
+alabaster : #F2F0E6
+alice blue : #F0F8FF
+alien armpit : #84DE02
+alizarin crimson : #E32636
+alloy orange : #C46210
+almond : #EFDECD
+amaranth : #E52B50
+amaranth deep purple : #9F2B68
+amaranth pink : #F19CBB
+amaranth purple : #AB274F
+amaranth red : #D3212D
+amazon : #3B7A57
+amazonite : #00C4B0
+amber : #FFBF00
+amber saeece : #FF7E00
+american blue : #3B3B6D
+american brown : #804040
+american gold : #D3AF37
+american green : #34B334
+american orange : #FF8B00
+american pink : #FF9899
+american purple : #431C53
+american red : #B32134
+american rose : #FF033E
+american silver : #CFCFCF
+american violet : #551B8C
+american yellow : #F2B400
+amethyst : #9966CC
+android green : #A4C639
+antiflash white : #F2F3F4
+antique brass : #CD9575
+antique bronze : #665D1E
+antique fuchsia : #915C83
+antique ruby : #841B2D
+antique white : #FAEBD7
+ao english : #008000
+apple : #66B447
+apple green : #8DB600
+apricot : #FBCEB1
+aqua : #00FFFF
+aquamarine : #7FFFD4
+arctic lime : #D0FF14
+army green : #4B5320
+arsenic : #3B444B
+artichoke : #8F9779
+arylide yellow : #E9D66B
+ash gray : #B2BEB5
+asparagus : #87A96B
+ateneo blue : #003A6C
+atomic tangerine : #FF9966
+auburn : #A52A2A
+aureolin : #FDEE00
+aurometalsaurus : #6E7F80
+avocado : #568203
+awesome : #FF2052
+axolotl : #63775B
+aztec gold : #C39953
+azure : #007FFF
+azure mist : #F0FFFF
+azure web color : #F0FFFF
+azureish white : #DBE9F4
+baby blue : #89CFF0
+baby blue eyes : #A1CAF1
+baby pink : #F4C2C2
+baby powder : #FEFEFA
+bakermiller pink : #FF91AF
+ball blue : #21ABCD
+banana mania : #FAE7B5
+banana yellow : #FFE135
+bangladesh green : #006A4E
+barbie pink : #E0218A
+barn red : #7C0A02
+battery charged blue : #1DACD6
+battleship grey : #848482
+bazaar : #98777B
+bdazzled blue : #BCD4E6
+beau blue : #9F8170
+beaver : #FA6E79
+begonia : #F5F5DC
+beige : #2E5894
+big dip oruby : #9C2542
+big foot feet : #E88E5A
+bisque : #FFE4C4
+bistre : #3D2B1F
+bistre brown : #967117
+bitter lemon : #CAE00D
+bitter lime : #BFFF00
+bittersweet : #FE6F5E
+bittersweet shimmer : #BF4F51
+black : #000000
+black bean : #3D0C02
+black chocolate : #1B1811
+black coffee : #3B2F2F
+black coral : #54626F
+black leather jacket : #253529
+black olive : #3B3C36
+black shadows : #8F5973
+blackberry : #BFAFB2
+blanched almond : #FFEBCD
+blastoff bronze : #A57164
+bleu de france : #318CE7
+blizzard blue : #ACE5EE
+blond : #FAF0BE
+blood orange : #D1001C
+blood red : #660000
+blue : #0000FF
+blue bell : #1F75FE
+blue bolt : #0093AF
+blue crayola : #0087BD
+blue jeans : #0018A8
+blue lagoon : #333399
+blue munsell : #0247FE
+blue ncs : #A2A2D0
+blue pantone : #00B9FB
+blue pigment : #6699CC
+blue ryb : #0D98BA
+blue sapphire : #5DADEC
+blue yonder : #ACE5EE
+blueberry : #553592
+bluebonnet : #126180
+bluegray : #8A2BE2
+bluegreen : #5072A7
+bluemagenta violet : #4F86F7
+blueviolet : #1C1CF0
+blush : #DE5D83
+bole : #79443B
+bondi blue : #0095B6
+bone : #E3DAC9
+booger buster : #DDE26A
+boston university red : #CC0000
+bottle green : #006A4E
+boysenberry : #873260
+brandeis blue : #0070FF
+brass : #B5A642
+brick red : #CB4154
+bright cerulean : #1DACD6
+bright gray : #EBECF0
+bright green : #66FF00
+bright lavender : #BF94E4
+bright lilac : #D891EF
+bright maroon : #C32148
+bright navy blue : #1974D2
+bright pink : #FF007F
+bright turquoise : #08E8DE
+bright ube : #D19FE8
+bright yellow crayola : #FFAA1D
+brilliant azure : #3399FF
+brilliant lavender : #F4BBFF
+brilliant rose : #FF55A3
+brink pink : #FB607F
+british racing green : #004225
+bronze : #88540B
+bronze : #CD7F32
+bronze metallic : #B08D57
+bronze yellow : #737000
+brown : #993300
+brown chocolate : #AF593E
+brown coffee : #964B00
+brown crayola : #A52A2A
+brown sugar : #6B4423
+brown traditional : #AF6E4D
+brown web : #5F1933
+brown yellow : #4A2C2A
+brownnose : #CC9966
+brunswick green : #1B4D3E
+bubble gum : #FFC1CC
+bubbles : #E7FEFF
+bud green : #7BB661
+buff : #F0DC82
+bulgarian rose : #480607
+burgundy : #800020
+burlywood : #DEB887
+burnished brown : #A17A74
+burnt orange : #CC5500
+burnt sienna : #E97451
+burnt umber : #8A3324
+button blue : #24A0ED
+byzantine : #BD33A4
+byzantium : #702963
+cadet : #536872
+cadet blue : #5F9EA0
+cadet grey : #91A3B0
+cadmium blue : #0A1195
+cadmium green : #006B3C
+cadmium orange : #ED872D
+cadmium purple : #B60C26
+cadmium red : #E30022
+cadmium violet : #FFF600
+cadmium yellow : #7F3E98
+café au lait : #A67B5B
+café noir : #4B3621
+cal poly pomona green : #1E4D2B
+calamansi : #FCFFA4
+cambridge blue : #A3C1AD
+camel : #C19A6B
+cameo pink : #EFBBCC
+camouflage green : #78866B
+canary : #FFFF99
+canary yellow : #FFEF00
+candy apple red : #FF0800
+candy pink : #E4717A
+capri : #00BFFF
+caput mortuum : #592720
+caramel : #FFD59A
+cardinal : #C41E3A
+caribbean green : #00CC99
+carmine : #960018
+carmine mp : #D70040
+carmine pink : #EB4C42
+carmine red : #FF0038
+carnation pink : #FFA6C9
+carnelian : #B31B1B
+carolina blue : #56A0D3
+carrot orange : #ED9121
+castleton green : #00563F
+catalina blue : #062A78
+catawba : #703642
+cedar chest : #C95A49
+ceil : #92A1CF
+celadon : #ACE1AF
+celadon blue : #007BA7
+celadon green : #2F847C
+celeste : #B2FFFF
+celestial blue : #4997D0
+cerise : #DE3163
+cerise pink : #EC3B83
+cerulean : #007BA7
+cerulean blue : #2A52BE
+cerulean frost : #6D9BC3
+cg blue : #007AA5
+cg red : #E03C31
+chamoisee : #A0785A
+champagne : #F7E7CE
+champagne pink : #F1DDCF
+charcoal : #36454F
+charleston green : #232B2B
+charm : #D0748B
+charm pink : #E68FAC
+chartreuse traditional : #DFFF00
+chartreuse web : #7FFF00
+cheese : #FFA600
+cherry : #DE3163
+cherry blossom pink : #FFB7C5
+chestnut : #954535
+china pink : #DE6FA1
+china rose : #A8516E
+chinese black : #141414
+chinese blue : #365194
+chinese bronze : #CD8032
+chinese brown : #AB381F
+chinese gold : #D0DB61
+chinese green : #CC9900
+chinese orange : #F37042
+chinese pink : #DE70A1
+chinese purple : #720B98
+chinese red : #CD071E
+chinese red : #AA381E
+chinese silver : #CCCCCC
+chinese violet : #856088
+chinese white : #E2E5DE
+chinese yellow : #FFB200
+chlorophyll green : #4AFF00
+chocolate kisses : #3C1421
+chocolate traditional : #7B3F00
+chocolate web : #D2691E
+christmas blue : #2A8FBD
+christmas blue : #365194
+christmas brown : #5D2B2C
+christmas brown : #4C1F02
+christmas gold : #3C8D0D
+christmas green : #007502
+christmas green : #CAA906
+christmas orange : #FF6600
+christmas orange : #D56C2B
+christmas pink : #FFCCCB
+christmas pink : #E34285
+christmas purple : #663398
+christmas purple : #4D084B
+christmas red : #AA0114
+christmas red : #B01B2E
+christmas silver : #E1DFE0
+christmas yellow : #FFCC00
+christmas yellow : #FEF200
+chrome yellow : #FFA700
+cinereous : #98817B
+cinnabar : #E34234
+cinnamon : #D2691E
+cinnamon satin : #CD607E
+citrine : #E4D00A
+citrine brown : #933709
+citron : #9FA91F
+claret : #7F1734
+classic rose : #FBCCE7
+cobalt blue : #0047AB
+cocoa brown : #D2691E
+coconut : #965A3E
+coffee : #6F4E37
+cola : #3C3024
+columbia blue : #C4D8E2
+conditioner : #FFFFCC
+congo pink : #F88379
+cookies and cream : #002E63
+cool black : #8C92AC
+cool grey : #EEE0B1
+copper : #B87333
+copper crayola : #DA8A67
+copper penny : #AD6F69
+copper red : #CB6D51
+copper rose : #996666
+coquelicot : #FF3800
+coral : #FF7F50
+coral pink : #F88379
+coral red : #FF4040
+coral reef : #FD7C6E
+cordovan : #893F45
+corn : #FBEC5D
+cornell red : #B31B1B
+cornflower blue : #6495ED
+cornsilk : #FFF8DC
+cosmic cobalt : #2E2D88
+cosmic latte : #FFF8E7
+cotton candy : #81613C
+coyote brown : #FFBCD9
+cream : #FFFDD0
+crimson : #DC143C
+crimson glory : #BE0032
+crimson red : #990000
+cultured : #F5F5F5
+cyan : #00FFFF
+cyan azure : #4E82B4
+cyan cobalt blue : #4682BF
+cyan cornflower blue : #28589C
+cyan process : #188BC2
+cyanblue azure : #00B7EB
+cyber grape : #58427C
+cyber yellow : #FFD300
+cyclamen : #F56FA1
+daffodil : #FFFF31
+dandelion : #F0E130
+dark blue : #00008B
+dark bluegray : #666699
+dark bronze : #804A00
+dark brown : #654321
+dark browntangelo : #88654E
+dark byzantium : #5D3954
+dark candy apple red : #A40000
+dark cerulean : #08457E
+dark charcoal : #333333
+dark chestnut : #986960
+dark chocolate : #490206
+dark chocolate hersheys : #3C1321
+dark coral : #26428B
+dark cornflower blue : #CD5B45
+dark cyan : #008B8B
+dark electric blue : #536878
+dark goldenrod : #B8860B
+dark gray x11 : #A9A9A9
+dark green : #013220
+dark green x11 : #006400
+dark gunmetal : #1F262A
+dark imperial blue : #00416A
+dark imperial blue : #00147E
+dark jungle green : #1A2421
+dark khaki : #BDB76B
+dark lava : #483C32
+dark lavender : #734F96
+dark lemon lime : #8BBE1B
+dark liver : #534B4F
+dark liver horses : #543D37
+dark magenta : #8B008B
+dark medium gray : #A9A9A9
+dark midnight blue : #003366
+dark moss green : #4A5D23
+dark olive green : #556B2F
+dark orange : #FF8C00
+dark orchid : #9932CC
+dark pastel blue : #779ECB
+dark pastel green : #03C03C
+dark pastel purple : #966FD6
+dark pastel red : #C23B22
+dark pink : #E75480
+dark powder blue : #003399
+dark puce : #4F3A3C
+dark purple : #301934
+dark raspberry : #872657
+dark red : #8B0000
+dark salmon : #E9967A
+dark scarlet : #560319
+dark sea green : #8FBC8F
+dark sienna : #3C1414
+dark sky blue : #8CBED6
+dark slate blue : #483D8B
+dark slate gray : #2F4F4F
+dark spring green : #177245
+dark tan : #918151
+dark tangerine : #FFA812
+dark taupe : #483C32
+dark terra cotta : #CC4E5C
+dark turquoise : #00CED1
+dark vanilla : #D1BEA8
+dark violet : #9400D3
+dark yellow : #9B870C
+dartmouth green : #00703C
+davys grey : #555555
+debian red : #D70A53
+deep amethyst : #9C8AA4
+deep aquamarine : #40826D
+deep carmine : #A9203E
+deep carmine pink : #EF3038
+deep carrot orange : #E9692C
+deep cerise : #DA3287
+deep champagne : #FAD6A5
+deep chestnut : #B94E48
+deep coffee : #704241
+deep fuchsia : #C154C1
+deep green : #056608
+deep greencyan turquoise : #0E7C61
+deep jungle green : #004B49
+deep koamaru : #333366
+deep lemon : #F5C71A
+deep lilac : #9955BB
+deep magenta : #CC00CC
+deep maroon : #820000
+deep mauve : #D473D4
+deep moss green : #355E3B
+deep peach : #FFCBA4
+deep pink : #FF1493
+deep puce : #A95C68
+deep red : #850101
+deep ruby : #843F5B
+deep saffron : #FF9933
+deep sky blue : #00BFFF
+deep space sparkle : #4A646C
+deep spring bud : #556B2F
+deep taupe : #7E5E60
+deep tuscan red : #66424D
+deep violet : #330066
+deer : #BA8759
+denim : #1560BD
+denim blue : #2243B6
+desaturated cyan : #669999
+desert : #C19A6B
+desert sand : #EDC9AF
+desire : #EA3C53
+diamond : #B9F2FF
+dim gray : #696969
+dingy dungeon : #C53151
+dirt : #9B7653
+dirty brown : #B5651E
+dirty white : #E8E4C9
+dodger blue : #1E90FF
+dodie yellow : #FEF65B
+dogwood rose : #D71868
+dollar bill : #85BB65
+dolphin gray : #828E84
+donkey brown : #664C28
+drab : #967117
+duke blue : #00009C
+dust storm : #E5CCC9
+dutch white : #EFDFBB
+earth yellow : #E1A95F
+ebony : #555D50
+ecru : #C2B280
+eerie black : #1B1B1B
+eggplant : #614051
+eggshell : #F0EAD6
+egyptian blue : #1034A6
+electric blue : #7DF9FF
+electric crimson : #FF003F
+electric cyan : #00FFFF
+electric green : #00FF00
+electric indigo : #6F00FF
+electric lavender : #F4BBFF
+electric lime : #CCFF00
+electric purple : #BF00FF
+electric ultramarine : #3F00FF
+electric violet : #8F00FF
+electric yellow : #FFFF33
+emerald : #50C878
+emerald green : #046307
+eminence : #6C3082
+english green : #1B4D3E
+english lavender : #B48395
+english red : #AB4B52
+english vermillion : #CC474B
+english violet : #563C5C
+eton blue : #96C8A2
+eucalyptus : #44D7A8
+fallow : #C19A6B
+falu red : #801818
+fandango : #B53389
+fandango pink : #DE5285
+fashion fuchsia : #F400A1
+fawn : #E5AA70
+feldgrau : #4D5D53
+feldspar : #FDD5B1
+fern green : #4F7942
+ferrari red : #FF2800
+field drab : #6C541E
+fiery rose : #FF5470
+fire engine red : #B22222
+fire opal : #CE2029
+firebrick : #E95C4B
+flame : #E25822
+flamingo pink : #FC8EAC
+flattery : #6B4423
+flavescent : #F7E98E
+flax : #EEDC82
+flesh : #FFE9D1
+flirt : #A2006D
+floral white : #FFFAF0
+fluorescent orange : #FFBF00
+fluorescent pink : #FF1493
+fluorescent yellow : #CCFF00
+folly : #FF004F
+forest green traditional : #014421
+forest green web : #228B22
+french beige : #A67B5B
+french bistre : #856D4D
+french blue : #0072BB
+french fuchsia : #FD3F92
+french lilac : #86608E
+french lime : #9EFD38
+french mauve : #D473D4
+french pink : #FD6C9E
+french plum : #811453
+french puce : #4E1609
+french raspberry : #C72C48
+french rose : #F64A8A
+french sky blue : #77B5FE
+french violet : #8806CE
+french wine : #AC1E44
+fresh air : #A6E7FF
+frostbite : #E936A7
+fuchsia : #FF00FF
+fuchsia crayola : #C154C1
+fuchsia pink : #FF77FF
+fuchsia purple : #CC397B
+fuchsia rose : #C74375
+fulvous : #E48400
+fuzzy wuzzy : #CC6666
+gainsboro : #DCDCDC
+gamboge : #E49B0F
+gamboge orange brown : #996600
+gargoyle gas : #733635
+garnet : #FFDF46
+generic viridian : #007F66
+ghost white : #F8F8FF
+giants club : #B05C52
+giants orange : #FE5A1D
+glaucous : #6082B6
+glossy grape : #AB92B3
+go green : #00AB66
+gold : #A57C00
+gold crayola : #D4AF37
+gold foil : #FFD700
+gold fusion : #E6BE8A
+gold metallic : #85754E
+gold web golden : #BD9B16
+golden brown : #996515
+golden poppy : #FCC200
+golden yellow : #FFDF00
+goldenrod : #DAA520
+granite gray : #676767
+granny smith apple : #A8E4A0
+grape : #6F2DA8
+gray htmlcss gray : #808080
+gray x11 gray : #BEBEBE
+grayasparagus : #465945
+grayblue : #8C92AC
+green : #008001
+green color wheel x11 green : #00FF00
+green crayola : #1CAC78
+green htmlcss color : #008000
+green lizard : #00A877
+green munsell : #009F6B
+green ncs : #00AD43
+green pantone : #00A550
+green pigment : #66B032
+green ryb : #1164B4
+green sheen : #009966
+greenblue : #A7F432
+greencyan : #6EAEA1
+greenyellow : #ADFF2F
+grullo : #A99A86
+gunmetal : #00FF7F
+guppie green : #2a3439
+halayà úbe : #663854
+halloween orange : #EB6123
+han blue : #446CCF
+han purple : #5218FA
+hansa yellow : #E9D66B
+harlequin : #3FFF00
+harlequin green : #46CB18
+harvard crimson : #C90016
+harvest gold : #DA9100
+heart gold : #808000
+heat wave : #FF7A00
+heidelberg red : #960018
+heliotrope : #DF73FF
+heliotrope gray : #AA98A9
+heliotrope magenta : #AA00BB
+hollywood cerise : #F400A1
+honeydew : #F0FFF0
+honolulu blue : #006DB0
+hookers green : #49796B
+hot magenta : #FF1DCE
+hot pink : #FF69B4
+hunter green : #355E3B
+iceberg : #71A6D2
+icterine : #FCF75E
+iguana green : #71BC78
+illuminating emerald : #319177
+imperial : #602F6B
+imperial blue : #002395
+imperial purple : #66023C
+imperial red : #ED2939
+inchworm : #B2EC5D
+independence : #4C516D
+india green : #138808
+indian red : #CD5C5C
+indian yellow : #E3A857
+indigo : #4B0082
+indigo dye : #091F92
+indigo rainbow : #233067
+indigo web : #4B0082
+infra red : #FF496C
+interdimensional blue : #360CCC
+international klein blue : #002FA7
+international orange aerospace : #FF4F00
+international orange engineering : #BA160C
+international orange golden gate bridge : #C0362C
+iris : #5A4FCF
+irresistible : #B3446C
+isabelline : #F4F0EC
+islamic green : #009000
+italian sky blue : #B2FFFF
+ivory : #FFFFF0
+jacarta : #3D325D
+jacko bean : #413628
+jade : #00A86B
+japanese carmine : #9D2933
+japanese indigo : #264348
+japanese laurel : #2F7532
+japanese violet : #5B3256
+jasmine : #F8DE7E
+jasper : #D73B3E
+jasper orange : #DE8F4E
+jazzberry jam : #A50B5E
+jelly bean : #DA614E
+jelly bean blue : #44798E
+jet : #343434
+jet stream : #BBD0C9
+jonquil : #F4CA16
+jordy blue : #8AB9F1
+june bud : #BDDA57
+jungle green : #29AB87
+kelly green : #4CBB17
+kenyan copper : #7C1C05
+keppel : #3AB09E
+key lime : #E8F48C
+khaki htmlcss khaki : #C3B091
+khaki x11 light khaki : #F0E68C
+kiwi : #8EE53F
+kobe : #882D17
+kobi : #E79FC4
+kobicha : #6B4423
+kombu green : #354230
+ksu purple : #512888
+ku crimson : #E8000D
+la salle green : #087830
+languid lavender : #D6CADD
+lapis lazuli : #26619C
+laser lemon : #FFFF66
+laurel green : #A9BA9D
+lava : #CF1020
+lavender blue : #B57EDC
+lavender blush : #E6E6FA
+lavender floral : #CCCCFF
+lavender gray : #FFF0F5
+lavender indigo : #C4C3D0
+lavender magenta : #9457EB
+lavender mist : #EE82EE
+lavender pink : #E6E6FA
+lavender purple : #FBAED2
+lavender rose : #967BB6
+lavender web : #FBA0E3
+lawn green : #7CFC00
+lemon : #FFF700
+lemon chiffon : #FFFACD
+lemon curry : #CCA01D
+lemon glacier : #FDFF00
+lemon meringue : #F6EABE
+lemon yellow : #FFF44F
+lemon yellow crayola : #FFFF9F
+lenurple : #BA93D8
+liberty : #545AA7
+licorice : #1A1110
+light apricot : #FDD5B1
+light blue : #ADD8E6
+light brown : #B5651D
+light carmine pink : #E66771
+light cobalt blue : #88ACE0
+light coral : #F08080
+light cornflower blue : #93CCEA
+light crimson : #F56991
+light cyan : #E0FFFF
+light deep pink : #FF5CCD
+light french beige : #C8AD7F
+light fuchsia pink : #F984EF
+light gold : #B29700
+light goldenrod yellow : #FAFAD2
+light gray : #D3D3D3
+light grayish magenta : #CC99CC
+light green : #90EE90
+light hot pink : #FFB3DE
+light khaki : #F0E68C
+light medium orchid : #D39BCB
+light moss green : #ADDFAD
+light orange : #FED8B1
+light orchid : #E6A8D7
+light pastel purple : #B19CD9
+light periwinkle : #C5CBE1
+light pink : #FFB6C1
+light red : #FFCCCB
+light red ochre : #E97451
+light salmon : #FFA07A
+light salmon pink : #FF9999
+light sea green : #20B2AA
+light silver : #D8D8D8
+light sky blue : #87CEFA
+light slate gray : #778899
+light steel blue : #B0C4DE
+light taupe : #B38B6D
+light thulian pink : #E68FAC
+light yellow : #FFFFE0
+lilac : #C8A2C8
+lilac luster : #AE98AA
+lime color wheel : #BFFF00
+lime green : #00FF00
+lime web x11 green : #32CD32
+limerick : #9DC209
+lincoln green : #195905
+linen : #FAF0E6
+lion : #C19A6B
+liseran purple : #DE6FA1
+little boy blue : #6CA0DC
+little girl pink : #F8B9D4
+liver : #674C47
+liver chestnut : #B86D29
+liver dogs : #6C2E1F
+liver organ : #987456
+livid : #6699CC
+lotion : #FEFDFA
+lumber : #FFE4CD
+lust : #E62020
+maastricht blue : #001C3D
+macaroni and cheese : #FFBD88
+madder lake : #CC3336
+magenta : #FF00FF
+magenta crayola : #FF55A3
+magenta dye : #CA1F7B
+magenta haze : #D0417E
+magenta pantone : #FF0090
+magenta process : #9F4576
+magentapink : #CC338B
+magic mint : #AAF0D1
+magic potion : #FF4466
+magnolia : #F8F4FF
+mahogany : #C04000
+maize : #FBEC5D
+maize crayola : #F2C649
+majorelle blue : #6050DC
+malachite : #0BDA51
+manatee : #979AAA
+mandarin : #F37A48
+mango green : #96FF00
+mango tango : #FF8243
+mantis : #74C365
+mardi gras : #880085
+marigold : #EAA221
+maroon crayola : #C32148
+maroon htmlcss : #800000
+maroon x11 : #B03060
+mauve : #E0B0FF
+mauve taupe : #915F6D
+mauvelous : #EF98AA
+maximum blue : #47ABCC
+maximum blue green : #30BFBF
+maximum blue purple : #ACACE6
+maximum green : #5E8C31
+maximum green yellow : #D9E650
+maximum purple : #733380
+maximum red : #D92121
+maximum red purple : #A63A79
+maximum yellow : #FAFA37
+maximum yellow red : #F2BA49
+may green : #4C9141
+maya blue : #73C2FB
+meat brown : #E5B73B
+medium aquamarine : #66DDAA
+medium blue : #0000CD
+medium candy apple red : #E2062C
+medium carmine : #AF4035
+medium champagne : #F3E5AB
+medium electric blue : #035096
+medium jungle green : #1C352D
+medium lavender magenta : #DDA0DD
+medium orchid : #BA55D3
+medium persian blue : #0067A5
+medium purple : #9370DB
+medium redviolet : #BB3385
+medium ruby : #AA4069
+medium sea green : #3CB371
+medium sky blue : #80DAEB
+medium slate blue : #7B68EE
+medium spring bud : #C9DC87
+medium spring green : #00FA9A
+medium taupe : #674C47
+medium turquoise : #48D1CC
+medium tuscan red : #79443B
+medium vermilion : #D9603B
+medium violetred : #C71585
+mellow apricot : #F8B878
+mellow yellow : #F8DE7E
+melon : #FDBCB4
+menthol : #C1F9A2
+metallic blue : #32527B
+metallic bronze : #A97142
+metallic brown : #AC4313
+metallic gold : #A97142
+metallic green : #296E01
+metallic orange : #DA680F
+metallic pink : #EDA6C4
+metallic red : #A62C2B
+metallic seaweed : #0A7E8C
+metallic silver : #A8A9AD
+metallic sunburst : #9C7C38
+metallic violet : #5B0A91
+metallic yellow : #FDCC0D
+mexican pink : #E4007C
+middle blue : #7ED4E6
+middle blue green : #8DD9CC
+middle blue purple : #8B72BE
+middle green : #8B8680
+middle green yellow : #4D8C57
+middle grey : #ACBF60
+middle purple : #D982B5
+middle red : #E58E73
+middle red purple : #A55353
+middle yellow : #FFEB00
+middle yellow red : #ECB176
+midnight : #702670
+midnight blue : #191970
+midnight blue : #00468C
+midnight green eagle green : #004953
+mikado yellow : #FFC40C
+milk : #FDFFF5
+milk chocolate : #84563C
+mimi pink : #FFDAE9
+mindaro : #E3F988
+ming : #36747D
+minion yellow : #F5E050
+mint : #3EB489
+mint cream : #F5FFFA
+mint green : #98FF98
+misty moss : #BBB477
+misty rose : #FFE4E1
+moccasin : #FAEBD7
+mode beige : #967117
+moonstone : #3AA8C1
+moonstone blue : #73A9C2
+mordant red 19 : #AE0C00
+morning blue : #8DA399
+moss green : #8A9A5B
+mountain meadow : #30BA8F
+mountbatten pink : #997A8D
+msu green : #18453B
+mud : #70543E
+mughal green : #306030
+mulberry : #C54B8C
+mulberry crayola : #C8509B
+mummys tomb : #828E84
+mustard : #FFDB58
+mustard brown : #CD7A00
+mustard green : #6E6E30
+mustard yellow : #E1AD01
+myrtle green : #317873
+mystic : #D65282
+mystic maroon : #AD4379
+mystic red : #FF5500
+nadeshiko pink : #F6ADC6
+napier green : #2A8000
+naples yellow : #FADA5E
+navajo white : #FFDEAD
+navy : #000080
+navy blue : #000080
+navy blue crayola : #1974D2
+navy purple : #9457EB
+neon blue : #1B03A3
+neon brown : #C3732A
+neon carrot : #FFA343
+neon cyan : #00FEFC
+neon fuchsia : #FE4164
+neon gold : #CFAA01
+neon gray : #808080
+neon green : #39FF14
+neon pink : #FE347E
+neon purple : #9457EB
+neon red : #FF1818
+neon scarlet : #FF2603
+neon silver : #CCCCCC
+neon tangerine : #F6890A
+neon yellow : #FFF700
+new car : #214FC6
+new york pink : #D7837F
+nickel : #727472
+nonphoto blue : #A4DDED
+north texas green : #059033
+nyanza : #E9FFDB
+ocean blue : #4F42B5
+ocean boat blue : #0077BE
+ocean green : #48BF91
+ochre : #CC7722
+office green : #008000
+ogre odor : #FD5240
+old burgundy : #43302E
+old gold : #CFB53B
+old heliotrope : #563C5C
+old lace : #FDF5E6
+old lavender : #796878
+old mauve : #673147
+old moss green : #867E36
+old rose : #C08081
+old silver : #848482
+olive : #808000
+olive drab 3 : #6B8E23
+olive drab 7 : #3C341F
+olivine : #9AB973
+onyx : #353839
+opal : #A8C3BC
+opera mauve : #B784A7
+orange color wheel : #FF7F00
+orange crayola : #FF7538
+orange pantone : #FF5800
+orange peel : #FB9902
+orange ryb : #FFA500
+orange soda : #FF9F00
+orange web : #FF4500
+orangered : #FA5B3D
+orangeyellow : #F8D568
+orchid : #DA70D6
+orchid pink : #F2BDCD
+orioles orange : #FB4F14
+otter brown : #654321
+ou crimson red : #414A4C
+outer space : #FF6E4A
+outrageous orange : #002147
+oxford blue : #6D9A79
+oxley : #990000
+pacific blue : #1CA9C9
+pakistan green : #006600
+palatinate blue : #273BE2
+palatinate purple : #682860
+pale aqua : #BCD4E6
+pale blue : #AFEEEE
+pale brown : #987654
+pale carmine : #AF4035
+pale cerulean : #9BC4E2
+pale chestnut : #DDADAF
+pale copper : #DA8A67
+pale cornflower blue : #ABCDEF
+pale cyan : #87D3F8
+pale gold : #E6BE8A
+pale goldenrod : #EEE8AA
+pale green : #98FB98
+pale lavender : #DCD0FF
+pale magenta : #F984E5
+pale magentapink : #FF99CC
+pale pink : #FADADD
+pale plum : #DDA0DD
+pale redviolet : #DB7093
+pale robin egg blue : #96DED1
+pale silver : #C9C0BB
+pale spring bud : #ECEBBD
+pale taupe : #BC987E
+pale turquoise : #AFEEEE
+pale violet : #CC99FF
+pale violetred : #DB7093
+palm leaf : #6F9940
+pansy purple : #78184A
+paolo veronese green : #009B7D
+papaya whip : #FFEFD5
+paradise pink : #E63E62
+paris green : #50C878
+parrot pink : #D998A0
+pastel blue : #AEC6CF
+pastel brown : #836953
+pastel gray : #CFCFC4
+pastel green : #77DD77
+pastel magenta : #F49AC2
+pastel orange : #FFB347
+pastel pink : #DEA5A4
+pastel purple : #B39EB5
+pastel red : #FF6961
+pastel violet : #CB99C9
+pastel yellow : #FDFD96
+patriarch : #800080
+paynes grey : #536878
+peach : #FFE5B4
+peach : #FFCBA4
+peach puff : #FFCC99
+peachorange : #FFDAB9
+peachyellow : #FADFAD
+pear : #D1E231
+pearl : #EAE0C8
+pearl aqua : #88D8C0
+pearly purple : #B768A2
+peridot : #E6E200
+periwinkle : #CCCCFF
+periwinkle crayola : #C3CDE6
+permanent geranium lake : #E12C2C
+persian blue : #1C39BB
+persian green : #00A693
+persian indigo : #32127A
+persian orange : #D99058
+persian pink : #F77FBE
+persian plum : #701C1C
+persian red : #CC3333
+persian rose : #FE28A2
+persimmon : #EC5800
+peru : #CD853F
+pewter blue : #8BA8B7
+philippine blue : #0038A7
+philippine brown : #5D1916
+philippine gold : #B17304
+philippine golden yellow : #FFDF00
+philippine gray : #8C8C8C
+philippine green : #008543
+philippine orange : #FF7300
+philippine pink : #FA1A8E
+philippine red : #CE1127
+philippine silver : #B3B3B3
+philippine violet : #81007F
+philippine yellow : #FECB00
+phlox : #DF00FF
+phthalo blue : #000F89
+phthalo green : #123524
+picton blue : #45B1E8
+pictorial carmine : #C30B4E
+piggy pink : #FDDDE6
+pine green : #01796F
+pine tree : #2A2F23
+pineapple : #563C0D
+pink : #FFC0CB
+pink flamingo : #D74894
+pink lace : #FC74FD
+pink lavender : #FFDDF4
+pink pantone : #D8B2D1
+pink pearl : #FF9966
+pink raspberry : #E7ACCF
+pink sherbet : #980036
+pinkorange : #F78FA7
+pistachio : #93C572
+pixie powder : #391285
+platinum : #E5E4E2
+plum : #8E4585
+plum web : #DDA0DD
+plump purple : #5946B2
+police blue : #374F6B
+polished pine : #5DA493
+pomp and power : #86608E
+popstar : #BE4F62
+portland orange : #FF5A36
+powder blue : #B0E0E6
+princess perfume : #FF85CF
+princeton orange : #F58025
+prune : #701C1C
+prussian blue : #003153
+psychedelic purple : #DF00FF
+puce : #CC8899
+puce red : #722F37
+pullman brown ups brown : #644117
+pullman green : #3B331C
+pumpkin : #FF7518
+purple heart : #800080
+purple html : #9F00C5
+purple mountain majesty : #A020F0
+purple munsell : #69359C
+purple navy : #9678B6
+purple pizzazz : #4E5180
+purple plum : #FE4EDA
+purple taupe : #9C51B6
+purple x11 : #50404D
+purpureus : #9A4EAE
+quartz : #51484F
+queen blue : #436B95
+queen pink : #E8CCD7
+quick silver : #A6A6A6
+quinacridone magenta : #8E3A59
+quincy : #6A5445
+rackley : #5D8AA8
+radical red : #FF355E
+raisin black : #242124
+rajah : #FBAB60
+raspberry : #E30B5D
+raspberry glace : #915F6D
+raspberry pink : #E25098
+raspberry rose : #B3446C
+raw sienna : #D68A59
+raw umber : #826644
+razzle dazzle rose : #FF33CC
+razzmatazz : #E3256B
+razzmic berry : #8D4E85
+rebecca purple : #663399
+red : #FF0000
+red crayola : #EE204D
+red devil : #F2003C
+red munsell : #C40233
+red ncs : #ED2939
+red pantone : #ED1C24
+red pigment : #FE2712
+red ryb : #A52A2A
+red salsa : #860111
+redbrown : #FF5349
+redorange : #E40078
+redpurple : #FD3A4A
+redviolet : #C71585
+redwood : #A45A52
+regalia : #522D80
+registration black : #000000
+resolution blue : #002387
+rhythm : #777696
+rich black : #004040
+rich black fogra29 : #010B13
+rich black fogra39 : #010203
+rich brilliant lavender : #F1A7FE
+rich carmine : #D70040
+rich electric blue : #0892D0
+rich lavender : #A76BCF
+rich lilac : #B666D2
+rich maroon : #B03060
+rifle green : #444C38
+roast coffee : #704241
+robin egg blue : #00CCCC
+rocket metallic : #8A7F80
+roman silver : #838996
+root beer : #290E05
+rose : #FF007F
+rose bonbon : #F9429E
+rose dust : #9E5E6F
+rose ebony : #674846
+rose garnet : #960145
+rose gold : #B76E79
+rose madder : #E32636
+rose pink : #FF66CC
+rose quartz : #AA98A9
+rose quartz pink : #BD559C
+rose red : #C21E56
+rose taupe : #905D5D
+rose vale : #AB4E52
+rosewood : #65000B
+rosso corsa : #D40000
+rosy brown : #BC8F8F
+royal azure : #0038A8
+royal blue : #002366
+royal blue : #4169E1
+royal brown : #523B35
+royal fuchsia : #CA2C92
+royal green : #136207
+royal orange : #F99245
+royal pink : #E73895
+royal purple : #9B1C31
+royal red : #D00060
+royal red : #7851A9
+royal yellow : #FADA5E
+ruber : #CE4676
+rubine red : #D10056
+ruby : #E0115F
+ruby red : #9B111E
+ruddy : #FF0028
+ruddy brown : #BB6528
+ruddy pink : #E18E96
+rufous : #A81C07
+russet : #80461B
+russian green : #679267
+russian violet : #32174D
+rust : #B7410E
+rusty red : #DA2C43
+sacramento state green : #00563F
+saddle brown : #8B4513
+safety orange : #FF7800
+safety orange blaze orange : #FF6700
+safety yellow : #EED202
+saffron : #F4C430
+sage : #BCB88A
+saint patricks blue : #23297A
+salem color : #177B4D
+salmon : #FA8072
+salmon pink : #FF91A4
+sand : #C2B280
+sand dune : #967117
+sandstorm : #ECD540
+sandy brown : #F4A460
+sandy tan : #FDD9B5
+sandy taupe : #967117
+sangria : #92000A
+sap green : #507D2A
+sapphire : #0F52BA
+sapphire blue : #0067A5
+sasquatch socks : #FF4681
+satin sheen gold : #CBA135
+scarlet : #FF2400
+scarlet : #FD0E35
+schauss pink : #FF91AF
+school bus yellow : #FFD800
+screamin green : #66FF66
+sea blue : #006994
+sea foam green : #9FE2BF
+sea green : #2E8B57
+sea green crayola : #00FFCD
+sea serpent : #4BC7CF
+seal brown : #59260B
+seashell : #FFF5EE
+selective yellow : #FFBA00
+sepia : #704214
+shadow : #8A795D
+shadow blue : #778BA5
+shampoo : #FFCFF1
+shamrock green : #009E60
+sheen green : #8FD400
+shimmering blush : #D98695
+shiny shamrock : #5FA778
+shocking pink : #FC0FC0
+shocking pink crayola : #FF6FFF
+sienna : #882D17
+silver : #C0C0C0
+silver chalice : #C9C0BB
+silver crayola : #AAA9AD
+silver foil : #ACACAC
+silver lake blue : #AFB1AE
+silver metallic : #5D89BA
+silver pink : #C4AEAD
+silver sand : #BFC1C2
+sinopia : #CB410B
+sizzling red : #FF3855
+sizzling sunrise : #FFDB00
+skobeloff : #007474
+sky blue : #87CEEB
+sky blue crayola : #76D7EA
+sky magenta : #CF71AF
+slate blue : #6A5ACD
+slate gray : #708090
+slimy green : #299617
+smalt dark powder blue : #003399
+smashed pumpkin : #FF6D3A
+smitten : #C84186
+smoke : #738276
+smokey topaz : #832A0D
+smoky black : #100C08
+smoky topaz : #933D41
+snow : #FFFAFA
+soap : #CEC8EF
+soldier green : #545A2C
+solid pink : #893843
+sonic silver : #757575
+space cadet : #9E1316
+spanish bistre : #1D2951
+spanish blue : #807532
+spanish carmine : #0070B8
+spanish crimson : #D10047
+spanish gray : #E51A4C
+spanish green : #989898
+spanish orange : #009150
+spanish pink : #E86100
+spanish purple : #F7BFBE
+spanish red : #66033C
+spanish sky blue : #E60026
+spanish violet : #00FFFF
+spanish viridian : #4C2882
+spanish yellow : #007F5C
+spartan crimson : #F6B511
+spicy mix : #8B5f4D
+spiro disco ball : #0FC0FC
+spring bud : #A7FC00
+spring frost : #87FF2A
+spring green : #00FF7F
+spring green crayola : #ECEBBD
+star command blue : #007BB8
+steel blue : #4682B4
+steel pink : #CC33CC
+steel teal : #5F8A8B
+stil de grain yellow : #FADA5E
+stizza : #990000
+stormcloud : #4F666A
+straw : #E4D96F
+strawberry : #FC5A8D
+sugar plum : #914E75
+sunburnt cyclops : #FF404C
+sunglow : #FFCC33
+sunny : #F2F27A
+sunray : #E3AB57
+sunset : #FAD6A5
+sunset orange : #FD5E53
+super pink : #CF6BA9
+sweet brown : #A83731
+tan : #D2B48C
+tangelo : #F94D00
+tangerine : #F28500
+tangerine yellow : #FFCC00
+tango pink : #E4717A
+tart orange : #FB4D46
+taupe : #483C32
+taupe gray : #8B8589
+tea green : #D0F0C0
+tea rose : #F88379
+tea rose : #F4C2C2
+teal : #008080
+teal blue : #367588
+teal deer : #99E6B3
+teal green : #00827F
+telemagenta : #CF3476
+temptress : #3C2126
+tenné : #CD5700
+terra cotta : #E2725B
+thistle : #D8BFD8
+thulian pink : #DE6FA1
+tickle me pink : #FC89AC
+tiffany blue : #0ABAB5
+tigers eye : #E08D3C
+timberwolf : #DBD7D2
+titanium : #878681
+titanium yellow : #EEE600
+tomato : #FF6347
+toolbox : #746CC0
+topaz : #FFC87C
+tractor red : #FD0E35
+trolley grey : #808080
+tropical rain forest : #00755E
+tropical violet : #CDA4DE
+true blue : #0073CF
+tufts blue : #3E8EDE
+tulip : #FF878D
+tumbleweed : #DEAA88
+turkish rose : #B57281
+turquoise : #40E0D0
+turquoise blue : #00FFEF
+turquoise green : #A0D6B4
+turquoise surf : #00C5CD
+turtle green : #8A9A5B
+tuscan : #FAD6A5
+tuscan brown : #6F4E37
+tuscan red : #7C4848
+tuscan tan : #A67B5B
+tuscany : #C09999
+twilight lavender : #8A496B
+tyrian purple : #66023C
+ua blue : #0033AA
+ua red : #D9004C
+ube : #8878C3
+ucla blue : #536895
+ucla gold : #FFB300
+ue red : #BA0001
+ufo green : #3CD070
+ultra pink : #3F00FF
+ultra red : #4166F5
+ultramarine : #FF6FFF
+ultramarine blue : #FC6C85
+umber : #635147
+unbleached silk : #FFDDCA
+united nations blue : #5B92E5
+university of california gold : #B78727
+university of tennessee orange : #F77F00
+unmellow yellow : #FFFF66
+up forest green : #014421
+up maroon : #7B1113
+upsdell red : #AE2029
+urobilin : #E1AD21
+usafa blue : #004F98
+usc cardinal : #990000
+usc gold : #FFCC00
+utah crimson : #D3003F
+vampire black : #080808
+van dyke brown : #664228
+vanilla : #F3E5AB
+vanilla ice : #F38FA9
+vegas gold : #C5B358
+venetian red : #C80815
+verdigris : #43B3AE
+vermilion : #E34234
+vermilion : #D9381E
+veronica : #A020F0
+verse green : #18880d
+very light azure : #74BBFB
+very light blue : #6666FF
+very light malachite green : #64E986
+very light tangelo : #FFB077
+very pale orange : #FFDFBF
+very pale yellow : #FFFFBF
+violet : #8F00FF
+violet color wheel : #7F00FF
+violet crayola : #963D7F
+violet ryb : #8601AF
+violet web : #EE82EE
+violetblue : #324AB2
+violetred : #F75394
+violin brown : #674403
+viridian : #40826D
+viridian green : #009698
+vista blue : #7C9ED9
+vivid amber : #CC9900
+vivid auburn : #922724
+vivid burgundy : #9F1D35
+vivid cerise : #DA1D81
+vivid cerulean : #00AAEE
+vivid crimson : #CC0033
+vivid gamboge : #FF9900
+vivid lime green : #A6D608
+vivid malachite : #00CC33
+vivid mulberry : #B80CE3
+vivid orange : #FF5F00
+vivid orange peel : #FFA000
+vivid orchid : #CC00FF
+vivid raspberry : #FF006C
+vivid red : #F70D1A
+vivid redtangelo : #DF6124
+vivid sky blue : #00CCFF
+vivid tangelo : #F07427
+vivid tangerine : #FFA089
+vivid vermilion : #E56024
+vivid violet : #9F00FF
+vivid yellow : #FFE302
+volt : #CEFF00
+wageningen green : #34B233
+warm black : #004242
+watermelon : #F05C85
+watermelon red : #BF4147
+waterspout : #A4F4F9
+weldon blue : #7C98AB
+wenge : #645452
+wheat : #F5DEB3
+white : #FFFFFF
+white chocolate : #EDE6D6
+white coffee : #E6E0D4
+white smoke : #F5F5F5
+wild blue yonder : #A2ADD0
+wild orchid : #D470A2
+wild strawberry : #FF43A4
+wild watermelon : #FC6C85
+willpower orange : #FD5800
+windsor tan : #A75502
+wine : #722F37
+wine dregs : #B11226
+wine red : #673147
+winter sky : #FF007C
+winter wizard : #A0E6FF
+wintergreen dream : #56887D
+wisteria : #C9A0DC
+wood brown : #C19A6B
+xanadu : #738678
+yale blue : #0F4D92
+yankees blue : #1C2841
+yellow : #FFFF00
+yellow crayola : #FCE883
+yellow munsell : #EFCC00
+yellow ncs : #FFD300
+yellow orange : #FEDF00
+yellow pantone : #FFEF00
+yellow process : #FEFE33
+yellow rose : #9ACD32
+yellow ryb : #FFAE42
+yellow sunshine : #FFF000
+yellowgreen : #FFF700
+zaffre : #0014A8
+zinnwaldite brown : #2C1608
+zomp : #39A78E

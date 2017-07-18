@@ -1,6 +1,7 @@
 from lxml import html
 import requests
 import itertools
+import re
 
 # # #
 # A python script which scrapes Wikipedia's list of colors for the names and hex codes of each of the 1400+ colors
@@ -43,13 +44,19 @@ index_of_pat = colors_n_z_a.index("St. Patrick's blue")
 colors_n_z_a[index_of_pat] = "Saint Patrick's Blue"
 
 # Now we can continue
-messy_list = [x.lower() for x in itertools.chain(colors_a_f_a[9:], colors_a_f_th[10:], colors_g_m_a[9:],
-                                                 colors_g_m_th[10:], colors_n_z_a[9:], colors_n_z_th[10:])]
+# First things first, we need to remove all non-alphanumeric characters from each string
+pattern = re.compile('([^\s\w]|_)+')
+messy_list = [pattern.sub('', x.lower()) for x in
+              itertools.chain(colors_a_f_a[9:], colors_a_f_th[10:], colors_g_m_a[9:],
+                              colors_g_m_th[10:], colors_n_z_a[9:], colors_n_z_th[10:])]
+# Now we can sort our list
 sorted_list = sorted(messy_list)
 
 hexes = list(itertools.chain(hex_a_f, hex_g_m, hex_n_z))
 colors = []
 
+# For some reason, Wikipedia writers decided to put only half of whatever "tawny" is from in the <a> tag
+# Consequently, we have to leave it out or else we will have too many entries in the colors list
 for x in sorted_list:
     if x != '\n' \
             and x != 'Hex' \
@@ -57,7 +64,7 @@ for x in sorted_list:
             and x != 'Satur.' \
             and x != 'Light' \
             and x != 'Value' \
-            and x != ' (tawny)' \
+            and x != ' tawny' \
             and not x.startswith('('):
         colors.append(x)
 
