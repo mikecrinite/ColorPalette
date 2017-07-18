@@ -49,24 +49,20 @@ public class ColorsViewActivity extends AppCompatActivity implements View.OnClic
         String name;
         int color;
         TextView txtName;
-        //View viewCol;
 
         for(ColorAssociation ca : colorList){
             inner = generateNonDefaultLinearLayout();
-            name = ca.getName();
+            name = ca.getName() + " : " + ca.getHex();
             color = ca.getColor();
 
             txtName = new TextView(getApplicationContext());
-            //viewCol = new ImageView(getApplicationContext());
 
             txtName.setText(name);
             txtName.setTextColor(color);
             txtName.setTextSize(30);
             txtName.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
-            //viewCol.setBackgroundColor(color);
 
             inner.addView(txtName);
-            //inner.addView(viewCol);
 
             outer.addView(inner);
         }
