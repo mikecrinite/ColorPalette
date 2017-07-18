@@ -310,8 +310,7 @@ public class MakePhotoPaletteActivity extends AppCompatActivity implements View.
         setColor(palette.getPal2(), colorView6);
         setColor(palette.getPal3(), colorView7);
 
-        //title.setText(cds.closestColor(palette.getColor()) + "~" + palette.getColor());
-        title.setText(palette.getColor());
+        title.setText(cds.closestColor(palette.getColor()) + "~" + palette.getColor());
     }
 
     /**
