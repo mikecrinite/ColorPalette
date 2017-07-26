@@ -5,7 +5,7 @@ A simple app that allows a user to either
 |-----------------------------|--------------------------------|--------------------------------|
 | ![](Screens/TakeAPhoto.png) | ![](Screens/SelectAnImage.png) | ![](Screens/ProvideAColor.png) |
 
-and then creates a color palette based on the user's selection.
+and then creates a color palette based on the user's selection. (I'm aware those colors aren't right, it's on the buglist below)
 
 Once the color is determined, the app displays its hex code, along with the name of the closest known color (selected from [Wikipedia's List Of Colors](https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F))
 
@@ -27,5 +27,5 @@ The colors can be displayed against a white or black background, toggleable by t
 * Selected shades are basically being created as colors indistinguishable from the original color
 * There's no actual scrollbar in the scrolling "View Colors" section
 * Some of the colors are still mismatched (possibly even in the screenshots :poop:)
-  - Problem near "pastel violet", "wisteria"
+  - Problem near "pastel violet", "french lilac", "wisteria", "ultramarine blue"
 * Nobody is reading this, it's really just a buglist for me
